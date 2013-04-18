@@ -122,10 +122,10 @@ package Irreversible "Irreversible reactions"
       annotation(Documentation(info="
  <html>
  <ul>
- Main Author 2007-2008: Jan Brugård, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
+ Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
  Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
 
- Copyright (c) 2005-2008 MathCore Engineering AB, Linköpings universitet and Modelica Association<br><br>
+ Copyright (c) 2005-2008 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association<br><br>
 
  The BioChem package is free software and can be redistributed<br>
  and/or modified under the terms of the Modelica License with<br>
@@ -144,10 +144,10 @@ package Irreversible "Irreversible reactions"
       annotation(Documentation(info="
  <html>
  <ul>
- Main Author 2007-2008: Jan Brugård, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
+ Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
  Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
 
- Copyright (c) 2005-2008 MathCore Engineering AB, Linköpings universitet and Modelica Association<br><br>
+ Copyright (c) 2005-2008 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association<br><br>
 
  The BioChem package is free software and can be redistributed<br>
  and/or modified under the terms of the Modelica License with<br>

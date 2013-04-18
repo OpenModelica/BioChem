@@ -11,7 +11,7 @@ All reactions need at least one substrate and at least one product. This package
  </p>
 
 <a name=\"fig1\"></a>
-<img src=\"../../Images/Reactions.png\" alt=\"Fig1:Reactions\"><br>
+<img src=\"modelica://BioChem/Resources/Images/Reactions.png\" alt=\"Fig1:Reactions\"><br>
 <i>Figure 1:  Some of the reactions</i><br>
 
  </html>

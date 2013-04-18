@@ -15,7 +15,7 @@ and then adding an equation for the relation between the reaction rate and the p
  </p>
 
 <br>
-<img src=\"../../Images/MassAction.png\" >
+<img src=\"modelica://BioChem/Resources/Images/MassAction.png\" >
 <br>
  </html>
  ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));

@@ -8,7 +8,7 @@ package Hill "Hill reactions kinetics"
  </p>
 
 <br>
-<img src=\"../../Images/Hill.png\" >
+<img src=\"modelica://BioChem/Resources/Images/Hill.png\" >
 <br>
  </html>
  ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));

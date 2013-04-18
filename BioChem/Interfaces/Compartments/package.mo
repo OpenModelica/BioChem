@@ -10,7 +10,7 @@ package Compartments "Properties for compartments"
 <a href=\"Modelica://BioChem.Compartments\">BioChem.Compartments</a> , and the compartment properties can be accessed by all substances in the compartment.
  </p>
 <br>
-<img src=\"../../Images/InterfaceCompartments.png\" >
+<img src=\"modelica://BioChem/Resources/Images/InterfaceCompartments.png\" >
 <br>
 
  </html>
@@ -23,7 +23,7 @@ package Compartments "Properties for compartments"
  </p>
  </html>
  "), defaultComponentName="compartment", Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillColor={0,85,0}, fillPattern=FillPattern.Solid, extent={{-100,-170},{100,-120}}, textString="%name", fontName="Arial"),Rectangle(visible=true, lineColor={0,0,127}, fillColor={0,170,255}, fillPattern=FillPattern.Solid, lineThickness=10, extent={{-110,-110},{110,110}}, radius=20)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
-    inner BioChem.Units.Volume V(start=1) "Compartment volume";
+    inner BioChem.Units.Volume V(start=1,stateSelect=StateSelect.prefer) "Compartment volume";
   end Compartment;
 
   partial model MainCompartment "Default properties for a compartment."

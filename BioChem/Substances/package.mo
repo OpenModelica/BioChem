@@ -26,7 +26,7 @@ When the concentration is not determined by reactions, the
  model is used. Then the substance concentration is regulated by external equations, and it  corresponds to SBML species changed by any SBML rules.
  </p>
 <a name=\"fig1\"></a>
-<img src=\"../Images/Substance.png\" alt=\"Fig1: Substance\">
+<img src=\"modelica://BioChem/Resources/Images/Substance.png\" alt=\"Fig1: Substance\">
 </html>
 
  </html>
@@ -53,7 +53,7 @@ Corresponds to SBML species not changed by any SBML rules and with either or bot
 </p>
 </html>
 "), Icon(coordinateSystem(extent={{-100,-100},{100,100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={-1.42109e-14,50}, fillPattern=FillPattern.Solid, extent={{-100,-150},{100,-100}}, textString="%name", fontName="Arial"),Ellipse(visible=true, lineColor={170,0,0}, fillColor={255,0,0}, fillPattern=FillPattern.Sphere, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
-    extends BioChem.Interfaces.Substances.InputSubstance;
+    extends BioChem.Interfaces.Substances.InputSubstance(n.stateSelect=StateSelect.prefer,c.stateSelect=StateSelect.prefer);
   equation
     der(n)=0;
   end BoundarySubstance;

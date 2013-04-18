@@ -24,7 +24,7 @@ package Reactions "Reaction edges"
 The reaction in the FastEquilibrium package is used to model reactions that are very fast, and could be seen as an instant balance. These models are approximated to very fast reactions, if translated to SBML.
 
 <br>
-<img src=\"../Images/Fast.png\" >
+<img src=\"modelica://BioChem/Resources/Images/Fast.png\" >
 <br>
 </html>", revisions=""));
     model Uuf "Uni-Uni fast (instant) equilibrium reaction"

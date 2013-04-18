@@ -8,7 +8,7 @@ This package contains models for irreversible and reversible activation reaction
  </p>
 
 <br>
-<img src=\"../../Images/Activation.png\" >
+<img src=\"modelica://BioChem/Resources/Images/Activation.png\" >
 <br>
  </html>
  ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));

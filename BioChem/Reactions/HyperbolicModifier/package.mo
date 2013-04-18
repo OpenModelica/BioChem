@@ -7,7 +7,7 @@ package HyperbolicModifier "Hyperbolic modifier kinetics reactions"
 This package contains models for irreversible and reversible hyperbolic modifier reaction kinetics.
  </p>
 <br>
-<img src=\"../../Images/Hyper.png\" >
+<img src=\"modelica://BioChem/Resources/Images/Hyper.png\" >
 <br>
 
  </html>

@@ -8,7 +8,7 @@ In this package, different types of irreversible and reversible inhibition react
  </p>
 
 <br>
-<img src=\"../../Images/Inhibition.png\" >
+<img src=\"modelica://BioChem/Resources/Images/Inhibition.png\" >
 <br>
 
 

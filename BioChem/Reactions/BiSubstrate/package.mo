@@ -7,7 +7,7 @@ package BiSubstrate "Bi-substrate reactions"
  This package contains models for bi-substrate reactions.
  </p>
 <br>
-<img src=\"../../Images/BiSubstrate.png\" >
+<img src=\"modelica://BioChem/Resources/Images/BiSubstrate.png\" >
 <br>
 
  </html>
