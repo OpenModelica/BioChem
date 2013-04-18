@@ -21,8 +21,8 @@ Download [BioChem v1.0.1 for MSL v3.2.1 (2013-04-18)](../../archive/v1.0.1.zip)
 
 * [Version v1.0.1 (2013-04-18)](../../archive/v1.0.1.zip)
   * Summary: Converted to MSL 3.2.1
-* [Version v1.0 (2009-08-31)](../../archive/v1.0+msl2.2.2.zip)
-  * Summary: Initial version
+* [Version v1.0 (2009-08-31)](../../archive/v1.0.zip)
+  * Summary: Initial version, compatible with MSL v2.2.2
 
 ## License
 
