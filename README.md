@@ -10,7 +10,7 @@ The classes implemented in the BioChem library describe substances and reactions
 take place in-between these substances in a diverse number of biochemical pathways.
 
 
-![Library](BioChem 1.0/Images/Library.png)
+![Library](BioChem/Images/Library.png)
 
 
 ## Current release
