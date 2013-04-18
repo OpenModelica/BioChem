@@ -10,15 +10,17 @@ The classes implemented in the BioChem library describe substances and reactions
 take place in-between these substances in a diverse number of biochemical pathways.
 
 
-![Library](BioChem/Images/Library.png)
+![Library](BioChem 1.0.1/Resources/Images/Library.png)
 
 
 ## Current release
 
-Download [BioChem v1.0 for MSL v2.2.2 (2009-08-31)](../../archive/v1.0+msl2.2.2.zip)
+Download [BioChem v1.0.1 for MSL v3.2.1 (2013-04-18)](../../archive/v1.0.1.zip)
 
 #### Release notes
 
+* [Version v1.0.1 (2013-04-18)](../../archive/v1.0.1.zip)
+  * Summary: Converted to MSL 3.2.1
 * [Version v1.0 (2009-08-31)](../../archive/v1.0+msl2.2.2.zip)
   * Summary: Initial version
 
