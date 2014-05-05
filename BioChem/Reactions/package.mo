@@ -15,8 +15,7 @@ package Reactions "Reaction edges"
  Reactions can take place between two compartments. If the reaction has more than one substrates or products,
  all substrates need to be located in one compartment, and all products also need to be in one compartment.
  </p>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={15.9037,-7.71383}, fillPattern=FillPattern.Solid, extent={{-85.9037,-92.2862},{-50,57.7138}}, textString="A", fontName="Arial"),Text(visible=true, origin={-10,-7.71383}, fillPattern=FillPattern.Solid, extent={{25,-92.2862},{60,57.7138}}, textString="B", fontName="Arial"),Line(visible=true, origin={-0.31,-6.93}, points={{-31.5,-17.25},{10.31,-17.25}}, thickness=3, arrow={Arrow.None,Arrow.Open}, arrowSize=20)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={15.9037,-7.71383}, fillPattern=FillPattern.Solid, extent={{-85.9037,-92.2862},{-50,57.7138}}, textString="A", fontName="Arial"),Text(visible=true, origin={-10,-7.71383}, fillPattern=FillPattern.Solid, extent={{25,-92.2862},{60,57.7138}}, textString="B", fontName="Arial"),Line(visible=true, origin={-0.31,-6.93}, points={{-31.5,-17.25},{10.31,-17.25}}, thickness=3, arrow={Arrow.None,Arrow.Open}, arrowSize=20)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
   package FastEquilibrium "Base classes for reactions with fast (instant) equilibrium"
     extends Icons.Library;
     annotation(Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Documentation(info="<html>

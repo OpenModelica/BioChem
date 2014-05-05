@@ -13,6 +13,5 @@ The package contains the following packages: <br>
 <li>Substances - Basic substance types.</li>
 </ul>
 
- </html>
- ", revisions=""), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
 end Interfaces;

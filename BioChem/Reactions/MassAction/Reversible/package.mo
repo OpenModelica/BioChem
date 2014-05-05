@@ -1,14 +1,12 @@
 within BioChem.Reactions.MassAction;
 package Reversible "Reversible reactions"
   extends Icons.Library;
-  annotation(Documentation(info="
- <html>
+  annotation(Documentation(info="<html>
  <p>This package contains models for reversible reactions with one to three reactants and products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
   package UniUni "A <-> B reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Uurfibi "Uni-uni reversible forward inhibition, backward inhibition reaction"
@@ -191,8 +189,7 @@ package Reversible "Reversible reactions"
 
   package UniTri "A <-> B+C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Utrfibi "Uni-tri reversible forward inhibition, backward inhibition reaction"
@@ -375,8 +372,7 @@ package Reversible "Reversible reactions"
 
   package UniBi "A <-> B+C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and two products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Ubrfibi "Uni-bi reversible forward inhibition, backward inhibition reaction"
@@ -559,8 +555,7 @@ package Reversible "Reversible reactions"
 
   package TriUni "A+B+C <-> D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Turfibi "Tri-uni reversible forward inhibition, backward inhibition reaction"
@@ -743,8 +738,7 @@ package Reversible "Reversible reactions"
 
   package TriTri "A+B+C <-> D+E+F reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Ttrfibi "Tri-tri reversible forward inhibition, backward inhibition reaction"
@@ -927,8 +921,7 @@ package Reversible "Reversible reactions"
 
   package TriBi "A+B+C <-> D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and two products</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Tbrfibi "Tri-bi reversible forward inhibition, backward inhibition reaction"
@@ -1111,8 +1104,7 @@ package Reversible "Reversible reactions"
 
   package BiUni "A+B <-> C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Burfibi "Bi-uni reversible forward inhibition, backward inhibition reaction"
@@ -1295,8 +1287,7 @@ package Reversible "Reversible reactions"
 
   package BiTri "A+B <-> C+D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Btrfibi "Bi-tri reversible forward inhibition, backward inhibition reaction"
@@ -1479,8 +1470,7 @@ package Reversible "Reversible reactions"
 
   package BiBi "A+B <-> C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and two products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Bbrfibi "Bi-bi reversible forward inhibition, backward inhibition reaction"

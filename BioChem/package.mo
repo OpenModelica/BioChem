@@ -88,9 +88,7 @@ Becker-Weimann S, Wolf J, Herzel H, Kramer A. Biophysical Journal Volume 87 Nove
 
 
 
- </html>
- ", revisions="
- <html>
+ </html>", revisions="<html>
 <h2>History</h2>
  <p>The first version of the library was created by Emma Larsdotter Nilsson at Link&ouml;ping University.
 The current version of the library has been further developed by Erik Ulfhielm at
@@ -117,9 +115,8 @@ Version 1.0.1 (2013-04-18)
 </li>
 <li>Version 1.0 (2009-08-31)</li>
 <li>Version 0.96 (2008-12-19)</li>
-</ul> 
- </html>
- "));
+</ul>
+ </html>"));
   package Math
     extends Icons.Library;
     annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={1.40855,-8.72502}, fillPattern=FillPattern.Solid, extent={{-81.4085,-69.705},{56.8628,38.725}}, textString="f(x)", fontName="Arial")}), Documentation(info="<html>

@@ -6,8 +6,7 @@ package Examples "Some examples of BioChem models"
  <p>
  This package contains several examples of pathways. Including basic examples as an asymmetric reaction with Michaelis-Menten kinetics to more advanced multi compartment models.
  </p>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, lineColor={0,0,127}, fillColor={85,85,255}, fillPattern=FillPattern.Sphere, extent={{25,-85},{50,-60}}),Ellipse(visible=true, lineColor={89,0,0}, fillColor={199,0,0}, fillPattern=FillPattern.Sphere, extent={{-75,-85},{-50,-60}}),Ellipse(visible=true, origin={-1.77636e-15,-8.81}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-25,-43.69},{3.55271e-15,-18.69}}),Ellipse(visible=true, origin={-1.77636e-15,-20}, lineColor={79,79,0}, fillColor={255,255,0}, fillPattern=FillPattern.Sphere, extent={{-25,30},{0,55}}),Line(visible=true, origin={0,-8.50446}, points={{-12.65,18.5045},{-12.65,-18.69}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=10),Line(visible=true, points={{0,-40},{20,-40},{34.02,-60}}, arrow={Arrow.None,Arrow.Open}, arrowSize=10, smooth=Smooth.Bezier),Line(visible=true, points={{-50,-72.78},{25,-72.78}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=10),Line(visible=true, points={{-24.8834,-40},{-45.6721,-40},{-60,-60}}, arrow={Arrow.None,Arrow.Open}, arrowSize=10, smooth=Smooth.Bezier)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, lineColor={0,0,127}, fillColor={85,85,255}, fillPattern=FillPattern.Sphere, extent={{25,-85},{50,-60}}),Ellipse(visible=true, lineColor={89,0,0}, fillColor={199,0,0}, fillPattern=FillPattern.Sphere, extent={{-75,-85},{-50,-60}}),Ellipse(visible=true, origin={-1.77636e-15,-8.81}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-25,-43.69},{3.55271e-15,-18.69}}),Ellipse(visible=true, origin={-1.77636e-15,-20}, lineColor={79,79,0}, fillColor={255,255,0}, fillPattern=FillPattern.Sphere, extent={{-25,30},{0,55}}),Line(visible=true, origin={0,-8.50446}, points={{-12.65,18.5045},{-12.65,-18.69}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=10),Line(visible=true, points={{0,-40},{20,-40},{34.02,-60}}, arrow={Arrow.None,Arrow.Open}, arrowSize=10, smooth=Smooth.Bezier),Line(visible=true, points={{-50,-72.78},{25,-72.78}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=10),Line(visible=true, points={{-24.8834,-40},{-45.6721,-40},{-60,-60}}, arrow={Arrow.None,Arrow.Open}, arrowSize=10, smooth=Smooth.Bezier)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
   model InsulinSignaling_Sedaghat "Metabolic insulin signaling pathway in rat adipocytes"
     annotation(Documentation(info="<html>
 <h1>InsulinSignaling</h1>
@@ -18,8 +17,7 @@ package Examples "Some examples of BioChem models"
  A mathematical model of metabolic insulin signaling.<br>
  American Journal of Physiology - Endocrinology and Metabolism, 283:1048-1101, Jul 2002.
  </p>
- </html>
- ", revisions=""), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, lineColor={85,170,255}, fillColor={0,0,255}, fillPattern=FillPattern.Sphere, extent={{-100.43,-91.42},{100.02,19.94}}),Line(visible=true, points={{0.0,110.0},{0.0,-34.05},{25.0,-52.36}}, color={170,0,0})}));
+ </html>", revisions=""), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, lineColor={85,170,255}, fillColor={0,0,255}, fillPattern=FillPattern.Sphere, extent={{-100.43,-91.42},{100.02,19.94}}),Line(visible=true, points={{0.0,110.0},{0.0,-34.05},{25.0,-52.36}}, color={170,0,0})}));
     extends BioChem.Compartments.Compartment;
     Substances.Substance irPMembIns(c.start=0) "Phosphorylated insulin receptor at plasma membrane, one insulin bound" annotation(Placement(visible=true, transformation(origin={10,30}, extent={{-10,-10},{10,10}}, rotation=0)));
     Reactions.MassAction.Irreversible.UniUni.Uui uui(k1=2500/60) annotation(Placement(visible=true, transformation(origin={-10,30}, extent={{-10,-10},{10,10}}, rotation=0)));
@@ -71,8 +69,7 @@ package Examples "Some examples of BioChem models"
  The parameter values in this model are arbitrarily chosen,
  to obtain a fully functional model, realistic parameter values must be used.
  </p>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Line(visible=true, points={{0,100},{0,25},{-25,0},{0,-25},{0,-75},{-25,-100}}),Line(visible=true, points={{0,25},{25,0},{-25,0}}),Line(visible=true, points={{0,-75},{25,-100}})}), Diagram(coordinateSystem(extent={{-105,148.5},{105,-148.5}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Line(visible=true, points={{0,100},{0,25},{-25,0},{0,-25},{0,-75},{-25,-100}}),Line(visible=true, points={{0,25},{25,0},{-25,0}}),Line(visible=true, points={{0,-75},{25,-100}})}), Diagram(coordinateSystem(extent={{-105,148.5},{105,-148.5}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     extends BioChem.Compartments.Compartment;
     Reactions.MassAction.Irreversible.UniUni.Uui uui1 annotation(Placement(visible=true, transformation(origin={1.83964e-13,-3.75}, extent={{-7.5,-7.5},{7.5,7.5}}, rotation=270)));
     Substances.Substance PEP1(c.start=0) "Phosphoenol pyruvate" annotation(Placement(visible=true, transformation(origin={2.96307e-12,-108.75}, extent={{-7.5,-7.5},{7.5,7.5}}, rotation=-270)));
@@ -135,8 +132,7 @@ package Examples "Some examples of BioChem models"
  The parameter values in this model are arbitrarily chosen,
  to obtain a fully functional model, realistic parameter values must be used.
  </p>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, fillColor={170,0,0}, fillPattern=FillPattern.Solid, extent={{-100,-25},{-50,25}}),Ellipse(visible=true, fillColor={0,85,0}, fillPattern=FillPattern.Solid, extent={{50,-25},{100,25}}),Line(visible=true, points={{-50,0},{50,0}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=30)}));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, fillColor={170,0,0}, fillPattern=FillPattern.Solid, extent={{-100,-25},{-50,25}}),Ellipse(visible=true, fillColor={0,85,0}, fillPattern=FillPattern.Solid, extent={{50,-25},{100,25}}),Line(visible=true, points={{-50,0},{50,0}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=30)}));
     extends BioChem.Compartments.Compartment;
     Substances.Substance F6P(c.start=2) "Fructose-6-phosphate" annotation(Placement(visible=true, transformation(origin={10,10}, extent={{-10,-10},{10,10}}, rotation=0)));
     Reactions.MichaelisMenten.Uur uur(vF=1.5, KmS=0.1, KmP=0.05) annotation(Placement(visible=true, transformation(origin={-10,10}, extent={{-10,-10},{10,10}}, rotation=0)));
@@ -2285,8 +2281,7 @@ The simulation results are shown in the
       connect(CaER.n1,Jch.s1) annotation(Line(visible=true, origin={-31.2,-16.4506}, points={{41.2,26.4506},{28.2,26.4506},{28.2,-19.0509},{-48.8,-19.0509},{-48.8,-14.7994}}, smooth=Smooth.Bezier));
     end Endoplasmic_Reticulum;
 
-    annotation(Documentation(info="
-<html>
+    annotation(Documentation(info="<html>
 <h1>Ca Oscillations</h1>
 This example is a Modelica version of the model presented in <i>A Minimal Generic Model of Bacteria-Induced Intracellular Ca<sup>2+</sup>
 Oscillations in Epithelial Cells</i> by Camilla Oxhamre, Agneta Richter-Dahlfors, Vladimir P. Zhdanov, and Bengt Kasemoy. (Biophysical Journal Volume 88 April 2005 2976-2981).<br><br>

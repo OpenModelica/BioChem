@@ -9,8 +9,7 @@ package MultiCompartments "Examples using different compartments for the reactin
  The parameter values in this model are arbitrarily chosen,
  to obtain a fully functional model, realistic parameter values must be used.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Line(visible=true, points={{0.0,100.0},{0.0,25.0},{-25.0,0.0},{0.0,-25.0},{0.0,-100.0}}, color={170,0,0}, thickness=0.5),Line(visible=true, points={{0.0,25.0},{25.0,0.0},{-25.0,0.0}}, color={170,0,0}, thickness=0.5)}), Diagram(coordinateSystem(extent={{-105,148.5},{105,-148.5}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Line(visible=true, points={{0.0,100.0},{0.0,25.0},{-25.0,0.0},{0.0,-25.0},{0.0,-100.0}}, color={170,0,0}, thickness=0.5),Line(visible=true, points={{0.0,25.0},{25.0,0.0},{-25.0,0.0}}, color={170,0,0}, thickness=0.5)}), Diagram(coordinateSystem(extent={{-105,148.5},{105,-148.5}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     extends BioChem.Compartments.Compartment;
     Substances.Substance Glucose(c.start=1/1000) "Glucose" annotation(Placement(visible=true, transformation(origin={-0.0,140.0}, extent={{-10.0,-10.0},{10.0,10.0}}, rotation=-90)));
     Reactions.MassAction.Irreversible.UniUni.Uui uui5(k1=1) annotation(Placement(visible=true, transformation(origin={0.0,120.0}, extent={{-10.0,-10.0},{10.0,10.0}}, rotation=270)));
@@ -107,9 +106,7 @@ The
 
 is used in the
 <a href=\"Modelica://BioChem.Examples.MultiCompartments.GlucoseMetabolism\">GlucoseMetabolism</a>
-.
-
-<html>", revisions=""));
+.<html>", revisions=""));
     model TCA "Tricarboxylic acid cycle"
       annotation(Documentation(info="<html>
  <p>
@@ -117,8 +114,7 @@ is used in the
  The parameter values in this model are arbitrarily chosen,
  to obtain a fully functional model, realistic parameter values must be used.
  </p>
- </html>
- "), Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, origin={0.0,-0.0}, lineColor={0,0,255}, fillColor={255,255,255}, extent={{-100.0,-100.0},{100.0,100.0}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-81.68,57.55},{-56.68,82.55}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-84.01,-79.94},{-59.01,-54.94}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-12.5,-112.5},{12.5,-87.5}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-112.5,-12.5},{-87.5,12.5}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{58.28,-81.54},{83.28,-56.54}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{57.82,56.16},{82.82,81.16}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{87.5,-12.5},{112.5,12.5}})}));
+ </html>"), Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, origin={0.0,-0.0}, lineColor={0,0,255}, fillColor={255,255,255}, extent={{-100.0,-100.0},{100.0,100.0}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-81.68,57.55},{-56.68,82.55}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-84.01,-79.94},{-59.01,-54.94}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-12.5,-112.5},{12.5,-87.5}}),Ellipse(visible=true, lineColor={0,85,255}, fillColor={0,85,255}, fillPattern=FillPattern.Solid, extent={{-112.5,-12.5},{-87.5,12.5}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{58.28,-81.54},{83.28,-56.54}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{57.82,56.16},{82.82,81.16}}),Ellipse(visible=true, lineColor={0,0,255}, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{87.5,-12.5},{112.5,12.5}})}));
       extends BioChem.Compartments.Compartment;
       BioChem.Substances.Substance oxaloacetate(c.start=1/10000) annotation(Placement(visible=true, transformation(origin={-30.0,60.0}, extent={{-10.0,-10.0},{10.0,10.0}}, rotation=0)));
       BioChem.Reactions.MassAction.Irreversible.UniUni.Uuifa uuifa5 annotation(Placement(visible=true, transformation(origin={-70.0,-5.0}, extent={{-10.0,-10.0},{10.0,10.0}}, rotation=90)));

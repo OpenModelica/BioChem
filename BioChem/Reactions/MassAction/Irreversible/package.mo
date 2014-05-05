@@ -1,14 +1,12 @@
 within BioChem.Reactions.MassAction;
 package Irreversible "Irreversible reactions"
   extends Icons.Library;
-  annotation(Documentation(info="
- <html>
+  annotation(Documentation(info="<html>
  <p>This package contains models for irreversible reactions with one to three reactants and products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
   package UniUni "A -> B reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Uuifi "Uni-uni irrerversible forward inhibition reaction"
@@ -51,8 +49,7 @@ package Irreversible "Irreversible reactions"
 
   package UniTri "A -> B+C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Utifi "Uni-tri irrerversible forward inhibition reaction"
@@ -95,8 +92,7 @@ package Irreversible "Irreversible reactions"
 
   package UniBi "A -> B+C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and two products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Ubifi "Uni-bi irrerversible forward inhibition reaction"
@@ -119,8 +115,7 @@ package Irreversible "Irreversible reactions"
     end Ubifafi;
 
     model Ubifa "Uni-bi irrerversible forward activation reaction"
-      annotation(Documentation(info="
- <html>
+      annotation(Documentation(info="<html>
  <ul>
  Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
  Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
@@ -141,8 +136,7 @@ package Irreversible "Irreversible reactions"
     end Ubifa;
 
     model Ubi "Uni-bi irrerversible reaction"
-      annotation(Documentation(info="
- <html>
+      annotation(Documentation(info="<html>
  <ul>
  Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
  Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
@@ -165,8 +159,7 @@ package Irreversible "Irreversible reactions"
 
   package TriUni "A+B+C -> D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Tuifi "Tri-uni irrerversible forward inhibition reaction"
@@ -209,8 +202,7 @@ package Irreversible "Irreversible reactions"
 
   package TriTri "A+B+C -> D+E+F reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Ttifi "Tri-tri irrerversible forward inhibition reaction"
@@ -253,8 +245,7 @@ package Irreversible "Irreversible reactions"
 
   package TriBi "A+B+C -> D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and two products</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Tbifi "Tri-bi irrerversible forward inhibition reaction"
@@ -297,8 +288,7 @@ package Irreversible "Irreversible reactions"
 
   package BiUni "A+B -> C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and one product.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Buifi "Bi-uni irrerversible forward inhibition reaction"
@@ -341,8 +331,7 @@ package Irreversible "Irreversible reactions"
 
   package BiTri "A+B -> C+D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and three products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Btifi "Bi-tri irrerversible forward inhibition reaction"
@@ -385,8 +374,7 @@ package Irreversible "Irreversible reactions"
 
   package BiBi "A+B -> C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and two products.</p>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
     model Bbifi "Bi-bi irrerversible forward inhibition reaction"
