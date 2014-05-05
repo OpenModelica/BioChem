@@ -1,18 +1,16 @@
 within BioChem.Reactions.MassAction;
 package Reversible "Reversible reactions"
   extends Icons.Library;
-  annotation(Documentation(info="
- <html>
+  annotation(Documentation(info="<html>
  <p>This package contains models for reversible reactions with one to three reactants and products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   package UniUni "A <-> B reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Uurfibi "Uni-uni reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -23,7 +21,7 @@ package Reversible "Reversible reactions"
     end Uurfibi;
 
     model Uurfibabi "Uni-uni reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -35,7 +33,7 @@ package Reversible "Reversible reactions"
     end Uurfibabi;
 
     model Uurfiba "Uni-uni reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -46,7 +44,7 @@ package Reversible "Reversible reactions"
     end Uurfiba;
 
     model Uurfi "Uni-uni reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -56,7 +54,7 @@ package Reversible "Reversible reactions"
     end Uurfi;
 
     model Uurfafibi "Uni-uni reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -68,7 +66,7 @@ package Reversible "Reversible reactions"
     end Uurfafibi;
 
     model Uurfafibabi "Uni-uni reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -81,7 +79,7 @@ package Reversible "Reversible reactions"
     end Uurfafibabi;
 
     model Uurfafiba "Uni-uni reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -93,7 +91,7 @@ package Reversible "Reversible reactions"
     end Uurfafiba;
 
     model Uurfafi "Uni-uni reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -104,7 +102,7 @@ package Reversible "Reversible reactions"
     end Uurfafi;
 
     model Uurfabi "Uni-uni reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -115,7 +113,7 @@ package Reversible "Reversible reactions"
     end Uurfabi;
 
     model Uurfababi "Uni-uni reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -127,7 +125,7 @@ package Reversible "Reversible reactions"
     end Uurfababi;
 
     model Uurfaba "Uni-uni reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -138,7 +136,7 @@ package Reversible "Reversible reactions"
     end Uurfaba;
 
     model Uurfa "Uni-uni reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -148,7 +146,7 @@ package Reversible "Reversible reactions"
     end Uurfa;
 
     model Uurbi "Uni-uni reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -158,7 +156,7 @@ package Reversible "Reversible reactions"
     end Uurbi;
 
     model Uurbabi "Uni-uni reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -169,7 +167,7 @@ package Reversible "Reversible reactions"
     end Uurbabi;
 
     model Uurba "Uni-uni reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -179,7 +177,7 @@ package Reversible "Reversible reactions"
     end Uurba;
 
     model Uur "Uni-uni reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uur;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -191,12 +189,11 @@ package Reversible "Reversible reactions"
 
   package UniTri "A <-> B+C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Utrfibi "Uni-tri reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -207,7 +204,7 @@ package Reversible "Reversible reactions"
     end Utrfibi;
 
     model Utrfibabi "Uni-tri reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -219,7 +216,7 @@ package Reversible "Reversible reactions"
     end Utrfibabi;
 
     model Utrfiba "Uni-tri reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -230,7 +227,7 @@ package Reversible "Reversible reactions"
     end Utrfiba;
 
     model Utrfi "Uni-tri reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -240,7 +237,7 @@ package Reversible "Reversible reactions"
     end Utrfi;
 
     model Utrfafibi "Uni-tri reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -252,7 +249,7 @@ package Reversible "Reversible reactions"
     end Utrfafibi;
 
     model Utrfafibabi "Uni-tri reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -265,7 +262,7 @@ package Reversible "Reversible reactions"
     end Utrfafibabi;
 
     model Utrfafiba "Uni-tri reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -277,7 +274,7 @@ package Reversible "Reversible reactions"
     end Utrfafiba;
 
     model Utrfafi "Uni-tri reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -288,7 +285,7 @@ package Reversible "Reversible reactions"
     end Utrfafi;
 
     model Utrfabi "Uni-tri reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -299,7 +296,7 @@ package Reversible "Reversible reactions"
     end Utrfabi;
 
     model Utrfababi "Uni-tri reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -311,7 +308,7 @@ package Reversible "Reversible reactions"
     end Utrfababi;
 
     model Utrfaba "Uni-tri reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -322,7 +319,7 @@ package Reversible "Reversible reactions"
     end Utrfaba;
 
     model Utrfa "Uni-tri reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -332,7 +329,7 @@ package Reversible "Reversible reactions"
     end Utrfa;
 
     model Utrbi "Uni-tri reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -342,7 +339,7 @@ package Reversible "Reversible reactions"
     end Utrbi;
 
     model Utrbabi "Uni-tri reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -353,7 +350,7 @@ package Reversible "Reversible reactions"
     end Utrbabi;
 
     model Utrba "Uni-tri reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -363,7 +360,7 @@ package Reversible "Reversible reactions"
     end Utrba;
 
     model Utr "Uni-tri reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Utr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -375,12 +372,11 @@ package Reversible "Reversible reactions"
 
   package UniBi "A <-> B+C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and two products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Ubrfibi "Uni-bi reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -391,7 +387,7 @@ package Reversible "Reversible reactions"
     end Ubrfibi;
 
     model Ubrfibabi "Uni-bi reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -403,7 +399,7 @@ package Reversible "Reversible reactions"
     end Ubrfibabi;
 
     model Ubrfiba "Uni-bi reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -414,7 +410,7 @@ package Reversible "Reversible reactions"
     end Ubrfiba;
 
     model Ubrfi "Uni-bi reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -424,7 +420,7 @@ package Reversible "Reversible reactions"
     end Ubrfi;
 
     model Ubrfafibi "Uni-bi reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -436,7 +432,7 @@ package Reversible "Reversible reactions"
     end Ubrfafibi;
 
     model Ubrfafibabi "Uni-bi reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -449,7 +445,7 @@ package Reversible "Reversible reactions"
     end Ubrfafibabi;
 
     model Ubrfafiba "Uni-bi reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -461,7 +457,7 @@ package Reversible "Reversible reactions"
     end Ubrfafiba;
 
     model Ubrfafi "Uni-bi reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -472,7 +468,7 @@ package Reversible "Reversible reactions"
     end Ubrfafi;
 
     model Ubrfabi "Uni-bi reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -483,7 +479,7 @@ package Reversible "Reversible reactions"
     end Ubrfabi;
 
     model Ubrfababi "Uni-bi reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -495,7 +491,7 @@ package Reversible "Reversible reactions"
     end Ubrfababi;
 
     model Ubrfaba "Uni-bi reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -506,7 +502,7 @@ package Reversible "Reversible reactions"
     end Ubrfaba;
 
     model Ubrfa "Uni-bi reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -516,7 +512,7 @@ package Reversible "Reversible reactions"
     end Ubrfa;
 
     model Ubrbi "Uni-bi reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -526,7 +522,7 @@ package Reversible "Reversible reactions"
     end Ubrbi;
 
     model Ubrbabi "Uni-bi reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -537,7 +533,7 @@ package Reversible "Reversible reactions"
     end Ubrbabi;
 
     model Ubrba "Uni-bi reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -547,7 +543,7 @@ package Reversible "Reversible reactions"
     end Ubrba;
 
     model Ubr "Uni-bi reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -559,12 +555,11 @@ package Reversible "Reversible reactions"
 
   package TriUni "A+B+C <-> D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Turfibi "Tri-uni reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -575,7 +570,7 @@ package Reversible "Reversible reactions"
     end Turfibi;
 
     model Turfibabi "Tri-uni reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -587,7 +582,7 @@ package Reversible "Reversible reactions"
     end Turfibabi;
 
     model Turfiba "Tri-uni reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -598,7 +593,7 @@ package Reversible "Reversible reactions"
     end Turfiba;
 
     model Turfi "Tri-uni reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -608,7 +603,7 @@ package Reversible "Reversible reactions"
     end Turfi;
 
     model Turfafibi "Tri-uni reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -620,7 +615,7 @@ package Reversible "Reversible reactions"
     end Turfafibi;
 
     model Turfafibabi "Tri-uni reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -633,7 +628,7 @@ package Reversible "Reversible reactions"
     end Turfafibabi;
 
     model Turfafiba "Tri-uni reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -645,7 +640,7 @@ package Reversible "Reversible reactions"
     end Turfafiba;
 
     model Turfafi "Tri-uni reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -656,7 +651,7 @@ package Reversible "Reversible reactions"
     end Turfafi;
 
     model Turfabi "Tri-uni reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -667,7 +662,7 @@ package Reversible "Reversible reactions"
     end Turfabi;
 
     model Turfababi "Tri-uni reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -679,7 +674,7 @@ package Reversible "Reversible reactions"
     end Turfababi;
 
     model Turfaba "Tri-uni reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -690,7 +685,7 @@ package Reversible "Reversible reactions"
     end Turfaba;
 
     model Turfa "Tri-uni reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -700,7 +695,7 @@ package Reversible "Reversible reactions"
     end Turfa;
 
     model Turbi "Tri-uni reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -710,7 +705,7 @@ package Reversible "Reversible reactions"
     end Turbi;
 
     model Turbabi "Tri-uni reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -721,7 +716,7 @@ package Reversible "Reversible reactions"
     end Turbabi;
 
     model Turba "Tri-uni reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -731,7 +726,7 @@ package Reversible "Reversible reactions"
     end Turba;
 
     model Tur "Tri-uni reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tur;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -743,12 +738,11 @@ package Reversible "Reversible reactions"
 
   package TriTri "A+B+C <-> D+E+F reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Ttrfibi "Tri-tri reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -759,7 +753,7 @@ package Reversible "Reversible reactions"
     end Ttrfibi;
 
     model Ttrfibabi "Tri-tri reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -771,7 +765,7 @@ package Reversible "Reversible reactions"
     end Ttrfibabi;
 
     model Ttrfiba "Tri-tri reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -782,7 +776,7 @@ package Reversible "Reversible reactions"
     end Ttrfiba;
 
     model Ttrfi "Tri-tri reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -792,7 +786,7 @@ package Reversible "Reversible reactions"
     end Ttrfi;
 
     model Ttrfafibi "Tri-tri reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -804,7 +798,7 @@ package Reversible "Reversible reactions"
     end Ttrfafibi;
 
     model Ttrfafibabi "Tri-tri reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -817,7 +811,7 @@ package Reversible "Reversible reactions"
     end Ttrfafibabi;
 
     model Ttrfafiba "Tri-tri reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -829,7 +823,7 @@ package Reversible "Reversible reactions"
     end Ttrfafiba;
 
     model Ttrfafi "Tri-tri reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -840,7 +834,7 @@ package Reversible "Reversible reactions"
     end Ttrfafi;
 
     model Ttrfabi "Tri-tri reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -851,7 +845,7 @@ package Reversible "Reversible reactions"
     end Ttrfabi;
 
     model Ttrfababi "Tri-tri reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -863,7 +857,7 @@ package Reversible "Reversible reactions"
     end Ttrfababi;
 
     model Ttrfaba "Tri-tri reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -874,7 +868,7 @@ package Reversible "Reversible reactions"
     end Ttrfaba;
 
     model Ttrfa "Tri-tri reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -884,7 +878,7 @@ package Reversible "Reversible reactions"
     end Ttrfa;
 
     model Ttrbi "Tri-tri reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -894,7 +888,7 @@ package Reversible "Reversible reactions"
     end Ttrbi;
 
     model Ttrbabi "Tri-tri reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -905,7 +899,7 @@ package Reversible "Reversible reactions"
     end Ttrbabi;
 
     model Ttrba "Tri-tri reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -915,7 +909,7 @@ package Reversible "Reversible reactions"
     end Ttrba;
 
     model Ttr "Tri-tri reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ttr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -927,12 +921,11 @@ package Reversible "Reversible reactions"
 
   package TriBi "A+B+C <-> D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and two products</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Tbrfibi "Tri-bi reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -943,7 +936,7 @@ package Reversible "Reversible reactions"
     end Tbrfibi;
 
     model Tbrfibabi "Tri-bi reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -955,7 +948,7 @@ package Reversible "Reversible reactions"
     end Tbrfibabi;
 
     model Tbrfiba "Tri-bi reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -966,7 +959,7 @@ package Reversible "Reversible reactions"
     end Tbrfiba;
 
     model Tbrfi "Tri-bi reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -976,7 +969,7 @@ package Reversible "Reversible reactions"
     end Tbrfi;
 
     model Tbrfafibi "Tri-bi reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -988,7 +981,7 @@ package Reversible "Reversible reactions"
     end Tbrfafibi;
 
     model Tbrfafibabi "Tri-bi reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1001,7 +994,7 @@ package Reversible "Reversible reactions"
     end Tbrfafibabi;
 
     model Tbrfafiba "Tri-bi reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1013,7 +1006,7 @@ package Reversible "Reversible reactions"
     end Tbrfafiba;
 
     model Tbrfafi "Tri-bi reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1024,7 +1017,7 @@ package Reversible "Reversible reactions"
     end Tbrfafi;
 
     model Tbrfabi "Tri-bi reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1035,7 +1028,7 @@ package Reversible "Reversible reactions"
     end Tbrfabi;
 
     model Tbrfababi "Tri-bi reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1047,7 +1040,7 @@ package Reversible "Reversible reactions"
     end Tbrfababi;
 
     model Tbrfaba "Tri-bi reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1058,7 +1051,7 @@ package Reversible "Reversible reactions"
     end Tbrfaba;
 
     model Tbrfa "Tri-bi reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1068,7 +1061,7 @@ package Reversible "Reversible reactions"
     end Tbrfa;
 
     model Tbrbi "Tri-bi reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1078,7 +1071,7 @@ package Reversible "Reversible reactions"
     end Tbrbi;
 
     model Tbrbabi "Tri-bi reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1089,7 +1082,7 @@ package Reversible "Reversible reactions"
     end Tbrbabi;
 
     model Tbrba "Tri-bi reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1099,7 +1092,7 @@ package Reversible "Reversible reactions"
     end Tbrba;
 
     model Tbr "Tri-bi reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -1111,12 +1104,11 @@ package Reversible "Reversible reactions"
 
   package BiUni "A+B <-> C reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Burfibi "Bi-uni reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1127,7 +1119,7 @@ package Reversible "Reversible reactions"
     end Burfibi;
 
     model Burfibabi "Bi-uni reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1139,7 +1131,7 @@ package Reversible "Reversible reactions"
     end Burfibabi;
 
     model Burfiba "Bi-uni reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1150,7 +1142,7 @@ package Reversible "Reversible reactions"
     end Burfiba;
 
     model Burfi "Bi-uni reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1160,7 +1152,7 @@ package Reversible "Reversible reactions"
     end Burfi;
 
     model Burfafibi "Bi-uni reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1172,7 +1164,7 @@ package Reversible "Reversible reactions"
     end Burfafibi;
 
     model Burfafibabi "Bi-uni reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1185,7 +1177,7 @@ package Reversible "Reversible reactions"
     end Burfafibabi;
 
     model Burfafiba "Bi-uni reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1197,7 +1189,7 @@ package Reversible "Reversible reactions"
     end Burfafiba;
 
     model Burfafi "Bi-uni reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1208,7 +1200,7 @@ package Reversible "Reversible reactions"
     end Burfafi;
 
     model Burfabi "Bi-uni reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1219,7 +1211,7 @@ package Reversible "Reversible reactions"
     end Burfabi;
 
     model Burfababi "Bi-uni reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1231,7 +1223,7 @@ package Reversible "Reversible reactions"
     end Burfababi;
 
     model Burfaba "Bi-uni reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1242,7 +1234,7 @@ package Reversible "Reversible reactions"
     end Burfaba;
 
     model Burfa "Bi-uni reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1252,7 +1244,7 @@ package Reversible "Reversible reactions"
     end Burfa;
 
     model Burbi "Bi-uni reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1262,7 +1254,7 @@ package Reversible "Reversible reactions"
     end Burbi;
 
     model Burbabi "Bi-uni reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1273,7 +1265,7 @@ package Reversible "Reversible reactions"
     end Burbabi;
 
     model Burba "Bi-uni reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1283,7 +1275,7 @@ package Reversible "Reversible reactions"
     end Burba;
 
     model Bur "Bi-uni reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bur;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -1295,12 +1287,11 @@ package Reversible "Reversible reactions"
 
   package BiTri "A+B <-> C+D+E reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Btrfibi "Bi-tri reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1311,7 +1302,7 @@ package Reversible "Reversible reactions"
     end Btrfibi;
 
     model Btrfibabi "Bi-tri reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1323,7 +1314,7 @@ package Reversible "Reversible reactions"
     end Btrfibabi;
 
     model Btrfiba "Bi-tri reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1334,7 +1325,7 @@ package Reversible "Reversible reactions"
     end Btrfiba;
 
     model Btrfi "Bi-tri reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1344,7 +1335,7 @@ package Reversible "Reversible reactions"
     end Btrfi;
 
     model Btrfafibi "Bi-tri reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1356,7 +1347,7 @@ package Reversible "Reversible reactions"
     end Btrfafibi;
 
     model Btrfafibabi "Bi-tri reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1369,7 +1360,7 @@ package Reversible "Reversible reactions"
     end Btrfafibabi;
 
     model Btrfafiba "Bi-tri reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1381,7 +1372,7 @@ package Reversible "Reversible reactions"
     end Btrfafiba;
 
     model Btrfafi "Bi-tri reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1392,7 +1383,7 @@ package Reversible "Reversible reactions"
     end Btrfafi;
 
     model Btrfabi "Bi-tri reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1403,7 +1394,7 @@ package Reversible "Reversible reactions"
     end Btrfabi;
 
     model Btrfababi "Bi-tri reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1415,7 +1406,7 @@ package Reversible "Reversible reactions"
     end Btrfababi;
 
     model Btrfaba "Bi-tri reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1426,7 +1417,7 @@ package Reversible "Reversible reactions"
     end Btrfaba;
 
     model Btrfa "Bi-tri reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1436,7 +1427,7 @@ package Reversible "Reversible reactions"
     end Btrfa;
 
     model Btrbi "Bi-tri reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1446,7 +1437,7 @@ package Reversible "Reversible reactions"
     end Btrbi;
 
     model Btrbabi "Bi-tri reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1457,7 +1448,7 @@ package Reversible "Reversible reactions"
     end Btrbabi;
 
     model Btrba "Bi-tri reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1467,7 +1458,7 @@ package Reversible "Reversible reactions"
     end Btrba;
 
     model Btr "Bi-tri reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Btr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";
@@ -1479,12 +1470,11 @@ package Reversible "Reversible reactions"
 
   package BiBi "A+B <-> C+D reactions"
     extends Icons.Library;
-    annotation(Documentation(info="
- <html>
+    annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and two products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Bbrfibi "Bi-bi reversible forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1495,7 +1485,7 @@ package Reversible "Reversible reactions"
     end Bbrfibi;
 
     model Bbrfibabi "Bi-bi reversible forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1507,7 +1497,7 @@ package Reversible "Reversible reactions"
     end Bbrfibabi;
 
     model Bbrfiba "Bi-bi reversible forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1518,7 +1508,7 @@ package Reversible "Reversible reactions"
     end Bbrfiba;
 
     model Bbrfi "Bi-bi reversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1528,7 +1518,7 @@ package Reversible "Reversible reactions"
     end Bbrfi;
 
     model Bbrfafibi "Bi-bi reversible forward activation, forward inhibition, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1540,7 +1530,7 @@ package Reversible "Reversible reactions"
     end Bbrfafibi;
 
     model Bbrfafibabi "Bi-bi reversible forward activation, forward inhibition, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1553,7 +1543,7 @@ package Reversible "Reversible reactions"
     end Bbrfafibabi;
 
     model Bbrfafiba "Bi-bi reversible forward activation, forward inhibition, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1565,7 +1555,7 @@ package Reversible "Reversible reactions"
     end Bbrfafiba;
 
     model Bbrfafi "Bi-bi reversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -1576,7 +1566,7 @@ package Reversible "Reversible reactions"
     end Bbrfafi;
 
     model Bbrfabi "Bi-bi reversible forward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1587,7 +1577,7 @@ package Reversible "Reversible reactions"
     end Bbrfabi;
 
     model Bbrfababi "Bi-bi reversible forward activation, backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1599,7 +1589,7 @@ package Reversible "Reversible reactions"
     end Bbrfababi;
 
     model Bbrfaba "Bi-bi reversible forward activation, backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
@@ -1610,7 +1600,7 @@ package Reversible "Reversible reactions"
     end Bbrfaba;
 
     model Bbrfa "Bi-bi reversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1620,7 +1610,7 @@ package Reversible "Reversible reactions"
     end Bbrfa;
 
     model Bbrbi "Bi-bi reversible backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1630,7 +1620,7 @@ package Reversible "Reversible reactions"
     end Bbrbi;
 
     model Bbrbabi "Bi-bi reversible backward activation, backward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorBackward;
@@ -1641,7 +1631,7 @@ package Reversible "Reversible reactions"
     end Bbrbabi;
 
     model Bbrba "Bi-bi reversible backward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorBackward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -1651,7 +1641,7 @@ package Reversible "Reversible reactions"
     end Bbrba;
 
     model Bbr "Bi-bi reversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbr;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
       parameter BioChem.Units.ReactionCoefficient k2=1 "Backwards reaction coefficient for the reaction";

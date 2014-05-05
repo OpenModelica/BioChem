@@ -10,15 +10,13 @@ This package contains models for irreversible and reversible hyperbolic modifier
 <img src=\"modelica://BioChem/Resources/Images/Hyper.png\" >
 <br>
 
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Uhmr "Reversible general hyperbolic modifier kinetics"
     annotation(Documentation(info="<html>
  <p>
  Reversible general hyperbolic modifier kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Modifier;
     parameter Real a=1 "Ratio of dissociaton constants, ES+M->ESM over E+M->EM";
@@ -37,8 +35,7 @@ This package contains models for irreversible and reversible hyperbolic modifier
  <p>
  Irreversible general hyperbolic modifier kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Modifier;
     parameter Real a=1 "Ratio of dissociaton constants, ES+M->ESM over E+M->EM";

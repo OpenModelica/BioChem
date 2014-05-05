@@ -10,15 +10,13 @@ package BiSubstrate "Bi-substrate reactions"
 <img src=\"modelica://BioChem/Resources/Images/BiSubstrate.png\" >
 <br>
 
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Ppbr "Ping pong bi-bi kinetics"
     annotation(Documentation(info="<html>
  <p>
  Ping pong bi-bi kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
     extends BioChem.Interfaces.Reactions.Basics.TwoProducts;
@@ -47,8 +45,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered uni-bi kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.OneSubstrateReversible;
     extends BioChem.Interfaces.Reactions.Basics.TwoProducts;
@@ -71,8 +68,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered bi-uni kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -95,8 +91,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered bi-bi kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
     extends BioChem.Interfaces.Reactions.Basics.TwoProducts;

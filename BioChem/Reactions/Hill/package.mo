@@ -10,15 +10,13 @@ package Hill "Hill reactions kinetics"
 <br>
 <img src=\"modelica://BioChem/Resources/Images/Hill.png\" >
 <br>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Hillr "Reversible Hill kinetics"
     annotation(Documentation(info="<html>
  <p>
  Reversible Hill kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     parameter Real h=1 "Hill Coefficient";
     parameter BioChem.Units.Concentration Keq=1 "Equilibrium constant";
@@ -34,8 +32,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Reversible Hill kinetics with one modifier.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Modifier;
     parameter Real alfa=1 "Effect of s1 and p1 on binding of m";
@@ -59,8 +56,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Reversible Hill kinetics with two modifiers.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.TwoModifiers;
     parameter Real alfa1=1 "Effect of s1 and p1 on binding of m";
@@ -87,8 +83,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Irreversible Hill kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     parameter Real h=1 "Hill Coefficient";
     parameter BioChem.Units.Concentration sHalf=1 "Substrate concentration such that v = vF/2";

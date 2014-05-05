@@ -15,11 +15,10 @@ package Reactions "Reaction edges"
  Reactions can take place between two compartments. If the reaction has more than one substrates or products,
  all substrates need to be located in one compartment, and all products also need to be in one compartment.
  </p>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={15.9037,-7.71383}, fillPattern=FillPattern.Solid, extent={{-85.9037,-92.2862},{-50,57.7138}}, textString="A", fontName="Arial"),Text(visible=true, origin={-10,-7.71383}, fillPattern=FillPattern.Solid, extent={{25,-92.2862},{60,57.7138}}, textString="B", fontName="Arial"),Line(visible=true, origin={-0.31,-6.93}, points={{-31.5,-17.25},{10.31,-17.25}}, thickness=3, arrow={Arrow.None,Arrow.Open}, arrowSize=20)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={15.9037,-7.71383}, fillPattern=FillPattern.Solid, extent={{-85.9037,-92.2862},{-50,57.7138}}, textString="A", fontName="Arial"),Text(origin={-10,-7.71383}, fillPattern=FillPattern.Solid, extent={{25,-92.2862},{60,57.7138}}, textString="B", fontName="Arial"),Line(origin={-0.31,-6.93}, points={{-31.5,-17.25},{10.31,-17.25}}, thickness=3, arrow={Arrow.None,Arrow.Open}, arrowSize=20)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   package FastEquilibrium "Base classes for reactions with fast (instant) equilibrium"
     extends Icons.Library;
-    annotation(Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Documentation(info="<html>
+    annotation(Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, grid={10,10})), Documentation(info="<html>
 <h1>FastEquilibrium</h1>
 The reaction in the FastEquilibrium package is used to model reactions that are very fast, and could be seen as an instant balance. These models are approximated to very fast reactions, if translated to SBML.
 
@@ -33,7 +32,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       extends BioChem.Interfaces.Reactions.Basics.OneProduct;
       parameter BioChem.Units.EquilibriumCoefficient kS1=1 "Equilibrium coefficient for the substrate";
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for the product";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       s1.r + p1.r=0;
@@ -47,7 +46,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for product 1";
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -62,7 +61,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kS1=1 "Equilibrium coefficient for the substrate";
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for product 1";
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -79,7 +78,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for product 1";
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -98,7 +97,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for product 1";
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -115,7 +114,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kS2=1 "Equilibrium coefficient for substrate 2";
       parameter BioChem.Units.EquilibriumCoefficient kP1=1 "Equilibrium coefficient for product 1";
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -135,7 +134,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
       parameter BioChem.Units.EquilibriumCoefficient kP4=1 "Equilibrium coefficient for product 4";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -156,7 +155,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
       parameter BioChem.Units.EquilibriumCoefficient kP4=1 "Equilibrium coefficient for product 4";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -175,7 +174,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
       parameter BioChem.Units.EquilibriumCoefficient kP4=1 "Equilibrium coefficient for product 4";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -196,7 +195,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kP2=1 "Equilibrium coefficient for product 2";
       parameter BioChem.Units.EquilibriumCoefficient kP3=1 "Equilibrium coefficient for product 3";
       parameter BioChem.Units.EquilibriumCoefficient kP4=1 "Equilibrium coefficient for product 4";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       p1.c=s1.c*kP1/kS1;
       p2.c=s1.c*kP2/kS1;
@@ -213,7 +212,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
       parameter BioChem.Units.EquilibriumCoefficient kS[dimS]=fill(1, dimS) "Equilibrium coefficients for the substrates";
       parameter BioChem.Units.EquilibriumCoefficient kP[dimP]=fill(1, dimP) "Equilibrium coefficients for the products";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       for i in 1:dimP loop
         p[i].c=s[1].c*kP[i]/kS[1];
@@ -230,7 +229,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
       parameter BioChem.Units.EquilibriumCoefficient kS1=1 "Equilibrium coefficient for substrate 1";
       parameter BioChem.Units.EquilibriumCoefficient kP[dimP]=fill(1, dimP) "Equilibrium coefficients for the products";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       for i in 1:dimP loop
         p[i].c=s1.c*kP[i]/kS1;
@@ -245,7 +244,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kS1=1 "Equilibrium coefficient for substrate 1";
       parameter BioChem.Units.EquilibriumCoefficient kS2=1 "Equilibrium coefficient for substrate 2";
       parameter BioChem.Units.EquilibriumCoefficient kP[dimP]=fill(1, dimP) "Equilibrium coefficients for the products";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       for i in 1:dimP loop
         p[i].c=s1.c*kP[i]/kS1;
@@ -263,7 +262,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kS3=1 "Equilibrium coefficient for substrate 3";
       parameter BioChem.Units.EquilibriumCoefficient kS4=1 "Equilibrium coefficient for substrate 4";
       parameter BioChem.Units.EquilibriumCoefficient kP[dimP]=fill(1, dimP) "Equilibrium coefficients for the products";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       for i in 1:dimP loop
         p[i].c=s1.c*kP[i]/kS1;
@@ -282,7 +281,7 @@ The reaction in the FastEquilibrium package is used to model reactions that are 
       parameter BioChem.Units.EquilibriumCoefficient kS2=1 "Equilibrium coefficient for substrate 2";
       parameter BioChem.Units.EquilibriumCoefficient kS3=1 "Equilibrium coefficient for substrate 3";
       parameter BioChem.Units.EquilibriumCoefficient kP[dimP]=fill(1, dimP) "Equilibrium coefficients for the products";
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     equation
       for i in 1:dimP loop
         p[i].c=s1.c*kP[i]/kS1;

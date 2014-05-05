@@ -10,15 +10,13 @@ This package contains models for irreversible and reversible activation reaction
 <br>
 <img src=\"modelica://BioChem/Resources/Images/Activation.png\" >
 <br>
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Umar "Reversible mixed activation kinetics"
     annotation(Documentation(info="<html>
  <p>
  Reversible mixed activation kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Kas=1 "Activation constant";
@@ -36,8 +34,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Irreversible mixed activation kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Kac=1 "Activation constant";
@@ -53,8 +50,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Reversible catalytic activation.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Ka=1 "Activation constant";
@@ -71,8 +67,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Irreversible catalytic activation.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Ka=1 "Activation constant";
@@ -87,8 +82,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Reversible specific activation kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Ka=1 "Activation constant";
@@ -105,8 +99,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Irreversible specific activation kinetics.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Activator;
     parameter BioChem.Units.Concentration Ka=1 "Activation constant";
@@ -121,8 +114,7 @@ This package contains models for irreversible and reversible activation reaction
  <p>
  Irreversible substrate activation.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     parameter BioChem.Units.Concentration KSa=1 "Dissociation constant of substrate-activation site";
     parameter BioChem.Units.Concentration KSc=1 "Dissociation constant of substrate-active site";

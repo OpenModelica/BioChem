@@ -13,15 +13,13 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
 <br>
 
 
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Uur "Uni-uni reversible simple Michaelis-Menten"
     annotation(Documentation(info="<html>
  <p>
  Uni-uni reversible simple Michaelis-Menten.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     parameter BioChem.Units.Concentration KmS=1 "Forward Michaelis-Menten constant";
     parameter BioChem.Units.Concentration KmP=1 "Reverse Michaelis-Menten constant";
@@ -36,8 +34,7 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
  <p>
  Uni-uni irreversible simple Michaelis-Menten.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     parameter BioChem.Units.Concentration KmS=1 "Forward Michaelis-Menten constant";
     parameter BioChem.Units.ReactionRate vF=1 "Forward maximum velocity";
@@ -50,8 +47,7 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
  <p>
  Uni-Uni reversible simple Michaelis-Menten with Haldane adjustment.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     parameter Real Keq=1 "Equilibrum constant";
     parameter BioChem.Units.Concentration KmS=1 "Forward Michaelis-Menten constant";
@@ -66,8 +62,7 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
  <p>
  Iso uni-uni.
  </p>
- </html>
- "), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     parameter Real Keq=1 "Equilibrum constant";
     parameter Real Kii=1 "Isoinhibition constant";

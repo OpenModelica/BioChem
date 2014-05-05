@@ -14,15 +14,14 @@ All reactions need at least one substrate and at least one product. This package
 <img src=\"modelica://BioChem/Resources/Images/Reactions.png\" alt=\"Fig1:Reactions\"><br>
 <i>Figure 1:  Some of the reactions</i><br>
 
- </html>
- ", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   partial model Uur "Uni-Uni reversible reaction"
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.OneSubstrateReversible;
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for the substrate";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -34,7 +33,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for the substrate";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -48,7 +47,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -64,7 +63,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -79,7 +78,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for the substrate";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -93,7 +92,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for the substrate";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -108,7 +107,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -124,7 +123,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -142,7 +141,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -162,7 +161,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -181,7 +180,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -199,7 +198,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -215,7 +214,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -229,7 +228,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for the product";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -245,7 +244,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -263,7 +262,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -280,7 +279,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -296,7 +295,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -314,7 +313,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS4=1 "Stoichiometric coefficient for substrate 4";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -334,7 +333,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS4=1 "Stoichiometric coefficient for substrate 4";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -355,7 +354,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -367,7 +366,7 @@ All reactions need at least one substrate and at least one product. This package
   end Qti;
 
   partial model Qtr "Quad-Tri reversible reaction"
-    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
     extends BioChem.Interfaces.Reactions.Basics.ThreeProducts;
@@ -389,7 +388,7 @@ All reactions need at least one substrate and at least one product. This package
   end Qtr;
 
   model Qui "Quad-Uni irreversible reaction"
-    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Basics.Reaction;
     extends BioChem.Interfaces.Reactions.Basics.FourSubstrates;
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -415,7 +414,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nS4=1 "Stoichiometric coefficient for substrate 4";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -436,7 +435,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -460,7 +459,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -481,7 +480,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -499,7 +498,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p1.r=-nP1*rr;
@@ -518,7 +517,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -538,7 +537,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -559,7 +558,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -581,7 +580,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -598,7 +597,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p.r=-nP*rr;
@@ -611,7 +610,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -627,7 +626,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nS4=1 "Stoichiometric coefficient for substrate 4";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -644,7 +643,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -658,7 +657,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p.r=-nP*rr;
@@ -673,7 +672,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -690,7 +689,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -705,7 +704,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -718,7 +717,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -731,7 +730,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -744,7 +743,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p.r=-nP*rr;
@@ -759,7 +758,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
     BioChem.Units.StoichiometricCoefficient nP4=1 "Stoichiometric coefficient for product 4";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -776,7 +775,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
     BioChem.Units.StoichiometricCoefficient nP2=1 "Stoichiometric coefficient for product 2";
     BioChem.Units.StoichiometricCoefficient nP3=1 "Stoichiometric coefficient for product 3";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -790,7 +789,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.OneProduct;
     BioChem.Units.StoichiometricCoefficient nS[dimS]=fill(1, dimS) "Stoichiometric coefficients for the substrates";
     BioChem.Units.StoichiometricCoefficient nP1=1 "Stoichiometric coefficient for product 1";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s.r=nS*rr;
     p1.r=-nP1*rr;
@@ -802,7 +801,7 @@ All reactions need at least one substrate and at least one product. This package
     extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     p.r=-nP*rr;
@@ -815,7 +814,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS1=1 "Stoichiometric coefficient for substrate 1";
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -831,7 +830,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nS4=1 "Stoichiometric coefficient for substrate 4";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;
@@ -848,7 +847,7 @@ All reactions need at least one substrate and at least one product. This package
     BioChem.Units.StoichiometricCoefficient nS2=1 "Stoichiometric coefficient for substrate 2";
     BioChem.Units.StoichiometricCoefficient nS3=1 "Stoichiometric coefficient for substrate 3";
     BioChem.Units.StoichiometricCoefficient nP[dimP]=fill(1, dimP) "Stoichiometric coefficients for the products";
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   equation
     s1.r=nS1*rr;
     s2.r=nS2*rr;

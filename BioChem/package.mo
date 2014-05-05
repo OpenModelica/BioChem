@@ -1,6 +1,6 @@
 package BioChem
   extends Icons.Library;
-  annotation(uses(Modelica(version="3.2")), version="1.0.1", Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Line(visible=true, origin={3.55271e-15,3.76}, points={{-50,-60},{-50,-27.52},{10,-27.52}}, smooth=Smooth.Bezier),Line(visible=true, origin={-1.135,4.09474}, points={{-48.865,10},{-48.865,-27.61},{11.135,-27.61}}, arrow={Arrow.None,Arrow.Open}, arrowSize=30, smooth=Smooth.Bezier),Ellipse(visible=true, origin={30.4112,-23.4648}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-20.4112,-20},{20.4112,20}}),Ellipse(visible=true, origin={6.28735,-0.665395}, lineColor={161,107,0}, fillColor={250,167,0}, fillPattern=FillPattern.Sphere, extent={{-76.2873,-79.3346},{-35.4736,-39.3346}}),Ellipse(visible=true, origin={4.98569,-1.03187}, lineColor={117,0,0}, fillColor={170,0,0}, fillPattern=FillPattern.Sphere, extent={{-75.8122,-6.13331},{-34.9857,33.8667}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+  annotation(uses(Modelica(version="3.2")), version="1.0.1", Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(origin={3.55271e-15,3.76}, points={{-50,-60},{-50,-27.52},{10,-27.52}}, smooth=Smooth.Bezier),Line(origin={-1.135,4.09474}, points={{-48.865,10},{-48.865,-27.61},{11.135,-27.61}}, arrow={Arrow.None,Arrow.Open}, arrowSize=30, smooth=Smooth.Bezier),Ellipse(origin={30.4112,-23.4648}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-20.4112,-20},{20.4112,20}}),Ellipse(origin={6.28735,-0.665395}, lineColor={161,107,0}, fillColor={250,167,0}, fillPattern=FillPattern.Sphere, extent={{-76.2873,-79.3346},{-35.4736,-39.3346}}),Ellipse(origin={4.98569,-1.03187}, lineColor={117,0,0}, fillColor={170,0,0}, fillPattern=FillPattern.Sphere, extent={{-75.8122,-6.13331},{-34.9857,33.8667}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   annotation(preferedView="info", Documentation(info="<html>
 
 
@@ -88,9 +88,7 @@ Becker-Weimann S, Wolf J, Herzel H, Kramer A. Biophysical Journal Volume 87 Nove
 
 
 
- </html>
- ", revisions="
- <html>
+ </html>", revisions="<html>
 <h2>History</h2>
  <p>The first version of the library was created by Emma Larsdotter Nilsson at Link&ouml;ping University.
 The current version of the library has been further developed by Erik Ulfhielm at
@@ -117,12 +115,11 @@ Version 1.0.1 (2013-04-18)
 </li>
 <li>Version 1.0 (2009-08-31)</li>
 <li>Version 0.96 (2008-12-19)</li>
-</ul> 
- </html>
- "));
+</ul>
+ </html>"));
   package Math
     extends Icons.Library;
-    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={1.40855,-8.72502}, fillPattern=FillPattern.Solid, extent={{-81.4085,-69.705},{56.8628,38.725}}, textString="f(x)", fontName="Arial")}), Documentation(info="<html>
+    annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={1.40855,-8.72502}, fillPattern=FillPattern.Solid, extent={{-81.4085,-69.705},{56.8628,38.725}}, textString="f(x)", fontName="Arial")}), Documentation(info="<html>
 <h1>Math</h1>
 A number of mathematical functions are used in pathway models. Some of these can be found in
 
@@ -135,9 +132,9 @@ while others have been added in this package.
 
 
 </html>", revisions=""));
-    function log10= Modelica.Math.log10 annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+    function log10= Modelica.Math.log10 annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     function factorial "factorial function, product of all positive integers less than or equal to n"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="n!", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="n!", fontName="Arial")}));
       input Integer n "input value";
       output Integer y "output value";
     protected
@@ -152,7 +149,7 @@ while others have been added in this package.
     end factorial;
 
     function sec "secant trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="sec( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="sec( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -160,7 +157,7 @@ while others have been added in this package.
     end sec;
 
     function cot "Cotangent trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="cot( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="cot( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -168,7 +165,7 @@ while others have been added in this package.
     end cot;
 
     function csc "cosecant trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="csc( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="csc( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -176,7 +173,7 @@ while others have been added in this package.
     end csc;
 
     function sech "hyperbolic secant trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="sech( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="sech( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -184,7 +181,7 @@ while others have been added in this package.
     end sech;
 
     function csch "hyperbolic cosecant trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="csch( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="csch( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -192,7 +189,7 @@ while others have been added in this package.
     end csch;
 
     function coth "hyperbolic cotangent trigonometric function"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="coth( )", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="coth( )", fontName="Arial")}));
       input Modelica.SIunits.Angle alpha "input angle";
       output Real y "output value";
     algorithm
@@ -200,7 +197,7 @@ while others have been added in this package.
     end coth;
 
     function root
-      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="root", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,105},{148.5,-105}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(fillPattern=FillPattern.Solid, extent={{-100,-100},{100,100}}, textString="root", fontName="Arial")}));
       input Real n "degree";
       input Real a "value";
       output Real y "output value";
@@ -209,7 +206,7 @@ while others have been added in this package.
     end root;
 
     function piecewise "Piecewise function that corresponds to the SBML piecewice definition"
-      annotation(Diagram(coordinateSystem(extent={{-148.5,-105.0},{148.5,105.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={0.0,-0.0}, fillPattern=FillPattern.Solid, extent={{-100.0,-30.0},{100.0,30.0}}, textString="piecewise()", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-148.5,-105.0},{148.5,105.0}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={0.0,-0.0}, fillPattern=FillPattern.Solid, extent={{-100.0,-30.0},{100.0,30.0}}, textString="piecewise()", fontName="Arial")}));
       input Real[:] value "Input values in the form {value1,value2,...,valueN,valueN+1}.";
       input Boolean[:] condition "Input conditions in the form {condition1,condition2,...,conditionN}. Not more than one condition is allowed to be true at any given time.";
       output Real y "Output value selected from the list of inputs.";
@@ -229,15 +226,15 @@ while others have been added in this package.
   package Icons "Icons"
     extends Library;
     partial package Library
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Rectangle(visible=true, fillColor={235,235,235}, fillPattern=FillPattern.Solid, extent={{-100,-100},{80,50}}),Polygon(visible=true, fillColor={210,210,210}, fillPattern=FillPattern.Solid, points={{-100,50},{-80,70},{100,70},{80,50},{-100,50}}),Polygon(visible=true, fillColor={210,210,210}, fillPattern=FillPattern.Solid, points={{100,70},{100,-80},{80,-100},{80,50},{100,70}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Rectangle(fillColor={235,235,235}, fillPattern=FillPattern.Solid, extent={{-100,-100},{80,50}}),Polygon(fillColor={210,210,210}, fillPattern=FillPattern.Solid, points={{-100,50},{-80,70},{100,70},{80,50},{-100,50}}),Polygon(fillColor={210,210,210}, fillPattern=FillPattern.Solid, points={{100,70},{100,-80},{80,-100},{80,50},{100,70}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     end Library;
 
     model IconBase
-      annotation(Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Text(visible=true, origin={0.0,-127.1933}, fillPattern=FillPattern.Solid, extent={{-100.0,-27.1933},{100.0,27.1933}}, textString="%name", fontName="Arial")}));
+      annotation(Diagram(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={0.0,-127.1933}, fillPattern=FillPattern.Solid, extent={{-100.0,-27.1933},{100.0,27.1933}}, textString="%name", fontName="Arial")}));
     end IconBase;
 
     partial package Example "Icon for an example model"
-      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Rectangle(visible=true, fillColor={255,255,255}, fillPattern=FillPattern.Solid, extent={{-100,-100},{80,50}}),Polygon(visible=true, fillColor={255,255,255}, fillPattern=FillPattern.Solid, points={{-100,50},{-80,70},{100,70},{80,50},{-100,50}}),Polygon(visible=true, fillColor={255,255,255}, fillPattern=FillPattern.Solid, points={{100,70},{100,-80},{80,-100},{80,50},{100,70}}),Text(visible=true, fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{-85,-85},{65,35}}, textString="Example", fontName="Arial"),Text(visible=true, fillColor={255,0,0}, extent={{-120,73},{120,132}}, textString="%name", fontName="Arial")}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Rectangle(fillColor={255,255,255}, fillPattern=FillPattern.Solid, extent={{-100,-100},{80,50}}),Polygon(fillColor={255,255,255}, fillPattern=FillPattern.Solid, points={{-100,50},{-80,70},{100,70},{80,50},{-100,50}}),Polygon(fillColor={255,255,255}, fillPattern=FillPattern.Solid, points={{100,70},{100,-80},{80,-100},{80,50},{100,70}}),Text(fillColor={0,0,255}, fillPattern=FillPattern.Solid, extent={{-85,-85},{65,35}}, textString="Example", fontName="Arial"),Text(fillColor={255,0,0}, extent={{-120,73},{120,132}}, textString="%name", fontName="Arial")}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     end Example;
 
     annotation(Documentation(info="<html>

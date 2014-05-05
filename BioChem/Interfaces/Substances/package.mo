@@ -8,12 +8,11 @@ The base class for all substances.
 <p>
 Corresponds to SBML species changed by SBML rules and with the <em>boundaryCondition</em> attribute set to true and the <em>constant</em> attribute set to false.
 </p>
-</html>
-"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, fillColor={123,152,255}, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+</html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Ellipse(fillColor={123,152,255}, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     BioChem.Units.Concentration c (stateSelect=StateSelect.prefer) "Current concentration of substance (mM)";
     BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
     BioChem.Units.AmountOfSubstance n (stateSelect=StateSelect.prefer) "Number of moles of substance in pool (mol)";
-    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible=true, transformation(origin={0,0}, extent={{-10,-10},{10,10}}, rotation=0), iconTransformation(origin={0,0}, extent={{-16,-16},{16,16}}, rotation=0)));
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(transformation(extent={{-10,-10},{10,10}}), iconTransformation(extent={{-16,-16},{16,16}})));
   protected
     outer BioChem.Units.Volume V "Compartment volume";
   equation
@@ -23,7 +22,7 @@ Corresponds to SBML species changed by SBML rules and with the <em>boundaryCondi
     c=n/V;
   end Substance;
 
-  annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Documentation(info="<html>
+  annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Documentation(info="<html>
 <h1>Substances</h1>
 This package contains partial models of different kinds of nodes needed to represent substances in biological and biochemical systems. The basic attributes corresponding to the properties that are studied during simulations, i.e., the amount and the concentration of the substance, are declared in these partial models.
 </html>", revisions=""));
@@ -34,12 +33,11 @@ The base class for all substances.
 <p>
 Corresponds to SBML species changed by SBML rules and with the <em>boundaryCondition</em> attribute set to true and the <em>constant</em> attribute set to false.
 </p>
-</html>
-"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10}), graphics={Ellipse(visible=true, fillColor={123,152,255}, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+</html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Ellipse(fillColor={123,152,255}, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     input BioChem.Units.Concentration c "Current concentration of substance (mM)";
     BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
     BioChem.Units.AmountOfSubstance n "Number of moles of substance in pool (mol)";
-    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible=true, transformation(origin={0,0}, extent={{-10,-10},{10,10}}, rotation=0), iconTransformation(origin={0,0}, extent={{-16,-16},{16,16}}, rotation=0)));
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(transformation(extent={{-10,-10},{10,10}}), iconTransformation(extent={{-16,-16},{16,16}})));
   protected
     outer BioChem.Units.Volume V "Compartment volume";
   equation
