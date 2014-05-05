@@ -13,13 +13,13 @@ In this package, different types of irreversible and reversible inhibition react
 
 
 
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   model Uucr "Uncompetitive inhibition (reversible)"
     annotation(Documentation(info="<html>
  <p>
  Uncompetitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -36,7 +36,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible uncompetitive inhibition.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -51,7 +51,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Reversible substrate inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     parameter BioChem.Units.Concentration Ki=1 "Inhibition constant for the substrate";
     parameter Real KmS=1 "Forward Michaelis-Menten constant";
@@ -67,7 +67,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible substrate inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     parameter BioChem.Units.Concentration Ki=1 "Inhibition constant for the substrate";
     parameter Real KmS=1 "Forward Michaelis-Menten constant";
@@ -81,7 +81,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Noncompetitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -98,7 +98,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible non-competitive inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -113,7 +113,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Reversible mixed inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Kis=1 "Specific (competitive) inhibition constant";
@@ -131,7 +131,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible mixed inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Kic=1 "Catalytic inhibition constant";
@@ -147,7 +147,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Competitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uur;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -164,7 +164,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible competitive inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Ki=1 "Inhibition constant for the substrate";
@@ -179,7 +179,7 @@ In this package, different types of irreversible and reversible inhibition react
  <p>
  Irreversible allosteric inhibition.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     extends BioChem.Interfaces.Reactions.Uui;
     extends BioChem.Interfaces.Reactions.Modifiers.Inhibitor;
     parameter Real Kii=1 "Dissociation constant of the inhibitor from the inactive form of the enzyme";

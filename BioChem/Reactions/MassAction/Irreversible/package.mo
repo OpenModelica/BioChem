@@ -3,14 +3,14 @@ package Irreversible "Irreversible reactions"
   extends Icons.Library;
   annotation(Documentation(info="<html>
  <p>This package contains models for irreversible reactions with one to three reactants and products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   package UniUni "A -> B reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Uuifi "Uni-uni irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uui;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -19,7 +19,7 @@ package Irreversible "Irreversible reactions"
     end Uuifi;
 
     model Uuifafi "Uni-uni irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -29,7 +29,7 @@ package Irreversible "Irreversible reactions"
     end Uuifafi;
 
     model Uuifa "Uni-uni irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -38,7 +38,7 @@ package Irreversible "Irreversible reactions"
     end Uuifa;
 
     model Uui "Uni-uni irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uui;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -51,9 +51,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Utifi "Uni-tri irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uti;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -62,7 +62,7 @@ package Irreversible "Irreversible reactions"
     end Utifi;
 
     model Utifafi "Uni-tri irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -72,7 +72,7 @@ package Irreversible "Irreversible reactions"
     end Utifafi;
 
     model Utifa "Uni-tri irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -81,7 +81,7 @@ package Irreversible "Irreversible reactions"
     end Utifa;
 
     model Uti "Uni-tri irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Uti;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -94,9 +94,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with one reactant and two products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Ubifi "Uni-bi irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -105,7 +105,7 @@ package Irreversible "Irreversible reactions"
     end Ubifi;
 
     model Ubifafi "Uni-bi irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -127,7 +127,7 @@ package Irreversible "Irreversible reactions"
  the additional provision that changed parts of BioChem also<br>
  must be made available under this License.<br>
  </ul>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -148,7 +148,7 @@ package Irreversible "Irreversible reactions"
  the additional provision that changed parts of BioChem also<br>
  must be made available under this License.<br>
  </ul>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -161,9 +161,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Tuifi "Tri-uni irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tui;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -172,7 +172,7 @@ package Irreversible "Irreversible reactions"
     end Tuifi;
 
     model Tuifafi "Tri-uni irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -182,7 +182,7 @@ package Irreversible "Irreversible reactions"
     end Tuifafi;
 
     model Tuifa "Tri-uni irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -191,7 +191,7 @@ package Irreversible "Irreversible reactions"
     end Tuifa;
 
     model Tui "Tri-uni irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tui;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -204,9 +204,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Ttifi "Tri-tri irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tti;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -215,7 +215,7 @@ package Irreversible "Irreversible reactions"
     end Ttifi;
 
     model Ttifafi "Tri-tri irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -225,7 +225,7 @@ package Irreversible "Irreversible reactions"
     end Ttifafi;
 
     model Ttifa "Tri-tri irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -234,7 +234,7 @@ package Irreversible "Irreversible reactions"
     end Ttifa;
 
     model Tti "Tri-tri irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tti;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -247,9 +247,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with three reactants and two products</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Tbifi "Tri-bi irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbi;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -258,7 +258,7 @@ package Irreversible "Irreversible reactions"
     end Tbifi;
 
     model Tbifafi "Tri-bi irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -268,7 +268,7 @@ package Irreversible "Irreversible reactions"
     end Tbifafi;
 
     model Tbifa "Tri-bi irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -277,7 +277,7 @@ package Irreversible "Irreversible reactions"
     end Tbifa;
 
     model Tbi "Tri-bi irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Tbi;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -290,9 +290,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and one product.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Buifi "Bi-uni irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bui;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -301,7 +301,7 @@ package Irreversible "Irreversible reactions"
     end Buifi;
 
     model Buifafi "Bi-uni irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -311,7 +311,7 @@ package Irreversible "Irreversible reactions"
     end Buifafi;
 
     model Buifa "Bi-uni irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bui;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -320,7 +320,7 @@ package Irreversible "Irreversible reactions"
     end Buifa;
 
     model Bui "Bi-uni irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bui;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -333,9 +333,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and three products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Btifi "Bi-tri irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bti;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -344,7 +344,7 @@ package Irreversible "Irreversible reactions"
     end Btifi;
 
     model Btifafi "Bi-tri irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -354,7 +354,7 @@ package Irreversible "Irreversible reactions"
     end Btifafi;
 
     model Btifa "Bi-tri irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bti;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -363,7 +363,7 @@ package Irreversible "Irreversible reactions"
     end Btifa;
 
     model Bti "Bi-tri irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bti;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
@@ -376,9 +376,9 @@ package Irreversible "Irreversible reactions"
     extends Icons.Library;
     annotation(Documentation(info="<html>
  <p>This package contains models for stoichiometric reactions with two reactants and two products.</p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+ </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
     model Bbifi "Bi-bi irrerversible forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbi;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -387,7 +387,7 @@ package Irreversible "Irreversible reactions"
     end Bbifi;
 
     model Bbifafi "Bi-bi irrerversible forward activation, forward inhibition reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       extends BioChem.Interfaces.Reactions.Modifiers.InhibitorForward;
@@ -397,7 +397,7 @@ package Irreversible "Irreversible reactions"
     end Bbifafi;
 
     model Bbifa "Bi-bi irrerversible forward activation reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbi;
       extends BioChem.Interfaces.Reactions.Modifiers.ActivatorForward;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
@@ -406,7 +406,7 @@ package Irreversible "Irreversible reactions"
     end Bbifa;
 
     model Bbi "Bi-bi irrerversible reaction"
-      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, initialScale=0.1, grid={10,10})));
+      annotation(Documentation(), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Bbi;
       parameter BioChem.Units.ReactionCoefficient k1=1 "Forwards reaction coefficient for the reaction";
     equation
