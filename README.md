@@ -10,15 +10,17 @@ The classes implemented in the BioChem library describe substances and reactions
 take place in-between these substances in a diverse number of biochemical pathways.
 
 
-![Library](BioChem/Resources/Images/Library.png)
+![Library](BioChem/Images/Library.png)
 
 
 ## Current release
 
-Download [BioChem v1.0.1 for MSL v3.2.1 (2013-04-18)](../../archive/v1.0.1.zip)
+Download [BioChem v1.2 for MSL v3.2.1 (2015-01-19)](../../archive/v1.2.zip)
 
 #### Release notes
 
+* [Version v1.2 (2015-01-19)](../../archive/v1.2.zip)
+  * Summary: Improvements to structure, documentation and icons.
 * [Version v1.0.1 (2013-04-18)](../../archive/v1.0.1.zip)
   * Summary: Converted to MSL 3.2.1
 * [Version v1.0 (2009-08-31)](../../archive/v1.0.zip)
@@ -26,7 +28,7 @@ Download [BioChem v1.0.1 for MSL v3.2.1 (2013-04-18)](../../archive/v1.0.1.zip)
 
 ## License
 
-Copyright &copy; 2005-2008 MathCore Engineering AB, Linköpings universitet and Modelica Association
+Copyright &copy; 2005-2014 Wolfram MathCore AB, Linköpings universitet and Modelica Association
 
 This Modelica package is free software and the use is completely at your own risk;
 it can be redistributed and/or modified under the terms of the [Modelica License 2](https://modelica.org/licenses/ModelicaLicense2)
