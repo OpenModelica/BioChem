@@ -1,17 +1,11 @@
 within BioChem;
-package Interfaces "Connection points and icons used in the BioChem package"
-  extends Icons.Library;
-  annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Documentation(info="<html>
-<h1>Interfaces</h1>
-This package contains partial models that can be used as building blocks for components such as different types of substances, compartments, and reactions.
-The models are designed to make it easy to create new customized components as well as to make these components possible to translate to and from SBML.<br>
-The package contains the following packages: <br>
-<ul>
-<li>Compartments - Properties used when creating different compartments.</li>
-<li>Nodes - Connection points used as interfaces between different components.</li>
-<li>Reactions - Building blocks for reactions.</li>
-<li>Substances - Basic substance types.</li>
-</ul>
 
- </html>", revisions=""), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+package Interfaces "Package with connection points and icons"
+  extends BioChem.Icons.Library;
+  annotation(Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Rectangle(visible = true, origin = {-32.0, 30.0}, lineColor = {128, 128, 128}, fillColor = {26, 118, 164}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-18.0, -18.0}, {18.0, 18.0}}), Ellipse(visible = true, origin = {30.0, 30.0}, lineColor = {128, 128, 128}, fillColor = {26, 118, 164}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-20.0, -20.0}, {20.0, 20.0}}), Polygon(visible = true, origin = {-40.0, -36.6667}, fillColor = {26, 118, 164}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, points = {{-10.0, 26.667}, {23.364, 6.667}, {-10.0, -13.333}}), Line(visible = true, origin = {40.0, -36.6667}, points = {{-30.0, 6.667}, {-10.0, 26.667}, {10.0, 6.667}}, color = {26, 118, 164}, thickness = 4), Line(visible = true, origin = {30.0, -30.0}, points = {{0.0, -20.0}, {0.0, 20.0}}, color = {26, 118, 164}, thickness = 4)}), Documentation(info = "<html><!--WSMINSERTIONTAGSTART interfacesTag -->
+    <body>
+    This package contains partial models that can be used as building blocks for components such as different types of substances and reactions. The models are designed to make it easy to create new customized components as well as to make these components possible to translate to and from SBML.<br><br>
+ The package contains the following subpackages:<ul><li><a href=\"Modelica://BioChem.Interfaces.Nodes\">Nodes</a>: connection points used as interfaces between different components</li><li><a href=\"Modelica://BioChem.Interfaces.Reactions\">Reactions</a>: building blocks for reactions</li></ul>
+    </body>
+    <!--WSMINSERTIONTAGEND interfacesTag --></html>", revisions = ""), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Interfaces;
