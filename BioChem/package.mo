@@ -21,10 +21,5 @@ package BioChem "A library for modeling, simulation, and visualization of biolog
  <li>Compartments.MainCompartment</li>
  </ul>
  <p>with <a href=\"modelica://BioChem.Compartments.ConstantCompartment\">Compartments.ConstantCompartment</a>. Finally, update the mainCompartment parameter to \"true\" in all previous MainComparment models.</p>
- <!--WSMINSERTIONTAGEND bioChemTag -->", revisions = "<h1>Version history</h1>
-    <p>The first version of the library was created by Emma Larsdotter Nilsson at Link&ouml;ping University. The current version of the library has been further developed by Erik Ulfhielm at Link&ouml;ping University, and by MathCore Engineering AB.</p>
-    <ul>
-    Main Author 2007-2014: Wolfram MathCore AB <br /> Main Author 2006: Erik Ulfhielm <br /> Main Author 2004-2005: Emma Larsdotter Nilsson <br /> <br /> Copyright (c) 2005-2014 Wolfram MathCore AB, Link&ouml;pings universitet and the Modelica Association</p>
-    <p>The <span style=\"font-family: Courier, Courier New\">BioChem</span> package is free software and can be redistributed and/or modified under the terms of the <a href=\"http://www.mathcore.com/products/mathmodelica/libraries/modelicalicense.php\">Modelica License, version 1.1</a> with the additional provision that changed parts of <span style=\"font-family: Courier, Courier New\">BioChem</span> also must be made available under this License. <br /> 
-    </ul>"));
+ <!--WSMINSERTIONTAGEND bioChemTag -->", revisions = ""));
 end BioChem;
