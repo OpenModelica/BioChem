@@ -117,15 +117,9 @@ package Irreversible "Irreversible reactions"
     model Ubifa "Uni-bi irrerversible forward activation reaction"
       annotation(Documentation(info="<html>
  <ul>
- Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
- Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
-
- Copyright (c) 2005-2008 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association<br><br>
-
- The BioChem package is free software and can be redistributed<br>
- and/or modified under the terms of the Modelica License with<br>
- the additional provision that changed parts of BioChem also<br>
- must be made available under this License.<br>
+ <li>Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB</li>
+ <li>Main Author 2006: Erik Ulfhielm</li>
+ <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
  </ul>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;
@@ -138,15 +132,9 @@ package Irreversible "Irreversible reactions"
     model Ubi "Uni-bi irrerversible reaction"
       annotation(Documentation(info="<html>
  <ul>
- Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB<br>Main Author 2006: Erik Ulfhielm<br>
- Main Author 2004-2005: Emma Larsdotter Nilsson<br><br>
-
- Copyright (c) 2005-2008 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association<br><br>
-
- The BioChem package is free software and can be redistributed<br>
- and/or modified under the terms of the Modelica License with<br>
- the additional provision that changed parts of BioChem also<br>
- must be made available under this License.<br>
+ <li>Main Author 2007-2008: Jan Brug&aring;rd, MathCore Engineering AB</li>
+ <li>Main Author 2006: Erik Ulfhielm</li>
+ <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
  </ul>
  </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
       extends BioChem.Interfaces.Reactions.Ubi;

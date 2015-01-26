@@ -1,6 +1,6 @@
 package BioChem
   extends Icons.Library;
-  annotation(uses(Modelica(version="3.2")), version="1.0.1", Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(origin={3.55271e-15,3.76}, points={{-50,-60},{-50,-27.52},{10,-27.52}}, smooth=Smooth.Bezier),Line(origin={-1.135,4.09474}, points={{-48.865,10},{-48.865,-27.61},{11.135,-27.61}}, arrow={Arrow.None,Arrow.Open}, arrowSize=30, smooth=Smooth.Bezier),Ellipse(origin={30.4112,-23.4648}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-20.4112,-20},{20.4112,20}}),Ellipse(origin={6.28735,-0.665395}, lineColor={161,107,0}, fillColor={250,167,0}, fillPattern=FillPattern.Sphere, extent={{-76.2873,-79.3346},{-35.4736,-39.3346}}),Ellipse(origin={4.98569,-1.03187}, lineColor={117,0,0}, fillColor={170,0,0}, fillPattern=FillPattern.Sphere, extent={{-75.8122,-6.13331},{-34.9857,33.8667}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+  annotation(uses(Modelica(version="3.2.1")), version="1.0.1", Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(origin={3.55271e-15,3.76}, points={{-50,-60},{-50,-27.52},{10,-27.52}}, smooth=Smooth.Bezier),Line(origin={-1.135,4.09474}, points={{-48.865,10},{-48.865,-27.61},{11.135,-27.61}}, arrow={Arrow.None,Arrow.Open}, arrowSize=30, smooth=Smooth.Bezier),Ellipse(origin={30.4112,-23.4648}, lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-20.4112,-20},{20.4112,20}}),Ellipse(origin={6.28735,-0.665395}, lineColor={161,107,0}, fillColor={250,167,0}, fillPattern=FillPattern.Sphere, extent={{-76.2873,-79.3346},{-35.4736,-39.3346}}),Ellipse(origin={4.98569,-1.03187}, lineColor={117,0,0}, fillColor={170,0,0}, fillPattern=FillPattern.Sphere, extent={{-75.8122,-6.13331},{-34.9857,33.8667}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   annotation(preferedView="info", Documentation(info="<html>
 
 
@@ -99,11 +99,8 @@ Link&ouml;ping University, and by MathCore Engineering AB.
  <li>Main Author 2006: Erik Ulfhielm</li>
  <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
  </ul>
-<p>Copyright (c) 2005-2008 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association</p>
-<p>The BioChem package is free software and can be redistributed
- and/or modified under the terms of the Modelica License with
- the additional provision that changed parts of BioChem also
- must be made available under this License.</p>
+<p>Copyright &copy; 2005-2015 MathCore Engineering AB, Link&ouml;pings universitet and Modelica Association</p>
+<p>The BioChem library is free software released under the terms of the <a href=\"modelica://BioChem/Resources/MPL_2.0.html\">Mozilla Public License, version 2.0</a>.</p>
 <h2>Versions</h2>
 <ul>
 <li>
