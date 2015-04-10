@@ -1,96 +1,237 @@
 within BioChem.Interfaces.Reactions;
+
 package Modifiers "Partial models of modifiers to reactions"
-  extends Icons.Library;
-  annotation(Documentation(info="", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-  partial model ModifierForward "Basics for a forward modifier in a reaction edge"
-    annotation(Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}));
-    BioChem.Interfaces.Nodes.ModifierConnector mF1 annotation(Placement(transformation(origin={1.11022e-16,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-1.5099e-14,90}, extent={{-20,-20},{20,20}})));
-  equation
-    mF1.r=0;
-  end ModifierForward;
+  extends BioChem.Icons.Library;
 
-  partial model ModifierBackward "Basics for a backward modifier in a reaction edge"
-    annotation(Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,-56.25},{0,-6.715}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}));
-    BioChem.Interfaces.Nodes.ModifierConnector mB1 annotation(Placement(transformation(origin={0,-90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-6.66134e-15,-90}, extent={{-20,-20},{20,20}})));
+  model Activator "Basics for an activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector a1 annotation(Placement(visible = true, transformation(origin = {0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
   equation
-    mB1.r=0;
-  end ModifierBackward;
-
-  partial model InhibitorForward "Basics for a forward inhibitor in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.InhibitorConnector iF1 annotation(Placement(transformation(origin={-2.66454e-15,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={1.06581e-14,90}, extent={{-20,-20},{20,20}})));
-  equation
-    iF1.r=0;
-  end InhibitorForward;
-
-  partial model InhibitorBackward "Basics for a backward inhibitor in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,-56.25},{0,-6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.InhibitorConnector iB1 annotation(Placement(transformation(origin={-5.55112e-16,-90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-4.88498e-15,-90}, extent={{-20,-20},{20,20}})));
-  equation
-    iB1.r=0;
-  end InhibitorBackward;
-
-  partial model ActivatorForward "Basics for a forward activator in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ActivatorConnector aF1 annotation(Placement(transformation(origin={-4.21885e-15,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-8.88178e-16,90}, extent={{-20,-20},{20,20}})));
-  equation
-    aF1.r=0;
-  end ActivatorForward;
-
-  partial model ActivatorBackward "Basics for a backward activator in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,-56.25},{0,-6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ActivatorConnector aB1 annotation(Placement(transformation(origin={-6.66134e-16,-90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={1.77636e-15,-90}, extent={{-20,-20},{20,20}})));
-  equation
-    aB1.r=0;
-  end ActivatorBackward;
-
-  model TwoModifiers "Basics for two modifiers in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ModifierConnector m2 annotation(Placement(transformation(origin={50,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={50,90}, extent={{-20,-20},{20,20}})));
-    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(transformation(origin={-50,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-50,90}, extent={{-20,-20},{20,20}})));
-  equation
-    0=m1.r;
-    0=m2.r;
-  end TwoModifiers;
-
-  model Modifier
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=30)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(transformation(origin={5.55111e-16,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-3.10862e-15,90}, extent={{-20,-20},{20,20}})));
-  equation
-    m1.r=0;
-  end Modifier;
-
-  model Activator "Basics for a forward activator in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ActivatorConnector a1 annotation(Placement(transformation(origin={0,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-1.28786e-14,90}, extent={{-20,-20},{20,20}})));
-  equation
-    a1.r=0;
+    a1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART activatorTag -->
+    <body>
+    Basics for an <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND activatorTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Activator;
 
-  model Inhibitor
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.InhibitorConnector i1 annotation(Placement(transformation(origin={0,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-9.99201e-15,90}, extent={{-20,-20},{20,20}})));
+  partial model ActivatorBackward "Basics for a backward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aB1 annotation(Placement(visible = true, transformation(origin = {-0.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
   equation
-    i1.r=0;
+    aB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART activatorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND activatorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end ActivatorBackward;
+
+  partial model ActivatorForward "Basics for a forward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aF1 annotation(Placement(visible = true, transformation(origin = {0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    aF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART activatorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND activatorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end ActivatorForward;
+
+  partial model LeftActivatorBackward "Basics for a backward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aB1 annotation(Placement(visible = true, transformation(origin = {-50.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    aB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART leftActivatorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND leftActivatorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end LeftActivatorBackward;
+
+  partial model LeftActivatorForward "Basics for a forward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aF1 annotation(Placement(visible = true, transformation(origin = {-50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    aF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART leftActivatorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND leftActivatorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, origin = {0.0, -1.25}, points = {{0.0, 81.25}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end LeftActivatorForward;
+
+  partial model RightActivatorBackward "Basics for a backward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aB1 annotation(Placement(visible = true, transformation(origin = {50.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    aB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART rightActivatorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND rightActivatorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end RightActivatorBackward;
+
+  partial model RightActivatorForward "Basics for a forward activator in a reaction edge"
+    BioChem.Interfaces.Nodes.ActivatorConnector aF1 annotation(Placement(visible = true, transformation(origin = {50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    aF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART rightActivatorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.ActivatorConnector\">activator</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND rightActivatorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end RightActivatorForward;
+
+  model Inhibitor "Basics for an inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector i1 annotation(Placement(visible = true, transformation(origin = {0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    i1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART inhibitorTag -->
+    <body>
+    Basics for an <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND inhibitorTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Inhibitor;
 
-  partial model ThreeModifiers "Basics for three modifiers in a reaction edge"
-    annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Line(points={{0,56.25},{0,6.25}}, color={0,0,255}, arrow={Arrow.None,Arrow.Open}, arrowSize=25)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(transformation(origin={-50,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-50,90}, extent={{-20,-20},{20,20}})));
-    BioChem.Interfaces.Nodes.ModifierConnector m2 annotation(Placement(transformation(origin={-3.33065e-16,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={1.11022e-15,90}, extent={{-20,-20},{20,20}})));
-    BioChem.Interfaces.Nodes.ModifierConnector m3 annotation(Placement(transformation(origin={50,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={50,90}, extent={{-20,-20},{20,20}})));
+  partial model InhibitorBackward "Basics for a backward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iB1 annotation(Placement(visible = true, transformation(origin = {-0.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
   equation
-    0=m1.r;
-    0=m2.r;
-    0=m3.r;
+    iB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART inhibitorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND inhibitorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end InhibitorBackward;
+
+  partial model InhibitorForward "Basics for a forward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iF1 annotation(Placement(visible = true, transformation(origin = {-0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    iF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART inhibitorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND inhibitorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end InhibitorForward;
+
+  partial model LeftInhibitorBackward "Basics for a backward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iB1 annotation(Placement(visible = true, transformation(origin = {-50.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    iB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART leftInhibitorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND leftInhibitorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end LeftInhibitorBackward;
+
+  partial model LeftInhibitorForward "Basics for a forward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iF1 annotation(Placement(visible = true, transformation(origin = {-50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    iF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART leftInhibitorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND leftInhibitorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end LeftInhibitorForward;
+
+  partial model RightInhibitorBackward "Basics for a backward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iB1 annotation(Placement(visible = true, transformation(origin = {50.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    iB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART rightInhibitorBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND rightInhibitorBackwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end RightInhibitorBackward;
+
+  partial model RightInhibitorForward "Basics for a forward inhibitor in a reaction edge"
+    BioChem.Interfaces.Nodes.InhibitorConnector iF1 annotation(Placement(visible = true, transformation(origin = {50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    iF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART rightInhibitorForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.InhibitorConnector\">inhibitor</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND rightInhibitorForwardTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end RightInhibitorForward;
+
+  model Modifier "Basics for a modifier in a reaction edge"
+    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(visible = true, transformation(origin = {0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    m1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART modifierTag -->
+    <body>
+    Basics for a <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifier</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND modifierTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end Modifier;
+
+  partial model ModifierBackward "Basics for a backward modifier in a reaction edge"
+    BioChem.Interfaces.Nodes.ModifierConnector mB1 annotation(Placement(visible = true, transformation(origin = {0.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, -100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    mB1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART modifierBackwardTag -->
+    <body>
+    Basics for a backward <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifier</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND modifierBackwardTag --></html>", revisions = ""), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, -80.0}, {0.0, -6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}));
+  end ModifierBackward;
+
+  partial model ModifierForward "Basics for a forward modifier in a reaction edge"
+    BioChem.Interfaces.Nodes.ModifierConnector mF1 annotation(Placement(visible = true, transformation(origin = {0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 97.8984}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    mF1.r = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART modifierForwardTag -->
+    <body>
+    Basics for a forward <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifier</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND modifierForwardTag --></html>", revisions = ""), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}));
+  end ModifierForward;
+
+  model TwoModifiers "Basics for two modifiers in a reaction edge"
+    BioChem.Interfaces.Nodes.ModifierConnector m2 annotation(Placement(visible = true, transformation(origin = {50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(visible = true, transformation(origin = {-50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    0 = m1.r;
+    0 = m2.r;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART twoModifiersTag -->
+    <body>
+    Basics for two <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifiers</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND twoModifiersTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end TwoModifiers;
+
+  partial model ThreeModifiers "Basics for three modifiers in a reaction edge"
+    BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(Placement(visible = true, transformation(origin = {-50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+    BioChem.Interfaces.Nodes.ModifierConnector m2 annotation(Placement(visible = true, transformation(origin = {-0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {-0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+    BioChem.Interfaces.Nodes.ModifierConnector m3 annotation(Placement(visible = true, transformation(origin = {50.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {50.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
+  equation
+    0 = m1.r;
+    0 = m2.r;
+    0 = m3.r;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART threeModifiersTag -->
+    <body>
+    Basics for three <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifiers</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND threeModifiersTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Line(visible = true, points = {{0.0, 80.0}, {0.0, 6.25}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Open}, arrowSize = 25)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end ThreeModifiers;
 
-  model MultipleModifiers
-    annotation(Icon(coordinateSystem(extent={{-100.0,-100.0},{100.0,100.0}}, preserveAspectRatio=true, grid={10,10}), graphics={Ellipse(lineColor={255,255,0}, fillColor={255,255,127}, fillPattern=FillPattern.Solid, lineThickness=2, extent={{-25.0,65.0},{25.0,115.0}}),Line(origin={0.0,29.1679}, points={{0.0,29.17},{0.0,-29.17}}, arrow={Arrow.None,Arrow.Filled}, arrowSize=30)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    parameter Integer dimM "number of modifiers";
-    BioChem.Interfaces.Nodes.ModifierConnector m[dimM] annotation(Placement(transformation(origin={-2.9976e-15,90}, extent={{-10,-10},{10,10}}), iconTransformation(origin={-8.88178e-16,90}, extent={{-18.75,-18.75},{18.75,18.75}})));
+  model MultipleModifiers "Basics for multiple modifiers in a reaction edge"
+    parameter Integer dimM = 5 "number of modifiers";
+    BioChem.Interfaces.Nodes.ModifierConnector m[dimM] annotation(Placement(visible = true, transformation(origin = {-0.0, 90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = 0), iconTransformation(origin = {0.0, 100.0}, extent = {{-17.5, -17.5}, {17.5, 17.5}}, rotation = 0)));
   equation
-    m.r=fill(0, dimM);
+    m.r = fill(0, dimM);
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART multipleModifiersTag -->
+    <body>
+    Basics for multiple <a href=\"Modelica://BioChem.Interfaces.Nodes.ModifierConnector\">modifiers</a> in a reaction edge
+    </body>
+    <!--WSMINSERTIONTAGEND multipleModifiersTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Ellipse(visible = true, origin = {0.0, 10.0}, lineColor = {255, 255, 0}, fillColor = {255, 255, 127}, fillPattern = FillPattern.Solid, lineThickness = 2, extent = {{-20.0, 70.0}, {20.0, 110.0}}), Line(visible = true, origin = {0.0, 35.0}, points = {{-0.0, 35.0}, {0.0, -35.0}}, color = {0, 85, 127}, arrow = {Arrow.None, Arrow.Filled}, arrowSize = 30)}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end MultipleModifiers;
-
+  annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART modifiersTag -->
+    <body>
+    This package contains basic building blocks for the partial <a href=\"Modelica://BioChem.Interfaces.Reactions\">Reaction</a> models.
+    </body>
+    <!--WSMINSERTIONTAGEND modifiersTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Modifiers;
