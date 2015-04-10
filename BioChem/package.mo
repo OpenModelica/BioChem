@@ -21,5 +21,13 @@ package BioChem "A library for modeling, simulation, and visualization of biolog
  <li>Compartments.MainCompartment</li>
  </ul>
  <p>with <a href=\"modelica://BioChem.Compartments.ConstantCompartment\">Compartments.ConstantCompartment</a>. Finally, update the mainCompartment parameter to \"true\" in all previous MainComparment models.</p>
- <!--WSMINSERTIONTAGEND bioChemTag -->", revisions = ""));
+ <!--WSMINSERTIONTAGEND bioChemTag -->", revisions = "<h1>Version history</h1>
+ <p>The first version of the library was created by Emma Larsdotter Nilsson at Link&ouml;ping University. The current version of the library has been further developed by Erik Ulfhielm at Link&ouml;ping University, and by Wolfram MathCore AB.</p>
+ <ul>
+ <li>Main Author 2007-2015: Wolfram MathCore AB</li>
+ <li>Main Author 2006: Erik Ulfhielm</li>
+ <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
+ </ul>
+ <p>Copyright &copy; 2005-2015 Wolfram MathCore AB, Link&ouml;pings universitet and Modelica Association</p>
+ <p>The BioChem library is free software released under the terms of the <a href=\"modelica://BioChem/Resources/MPL_2.0.html\">Mozilla Public License, version 2.0</a>.</p>"));
 end BioChem;

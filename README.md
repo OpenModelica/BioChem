@@ -28,7 +28,7 @@ Download [BioChem v1.2 for MSL v3.2.1 (2015-01-19)](../../archive/v1.2.zip)
 
 ## License
 
-Copyright &copy; 2005-2014 Wolfram MathCore AB, Linköpings universitet and Modelica Association
+Copyright &copy; 2005-2015 Wolfram MathCore AB, Linköpings universitet and Modelica Association
 
 The BioChem library is free software released under the terms of the [Mozilla Public License, version 2.0](https://www.mozilla.org/MPL/2.0/).
 
