@@ -136,6 +136,6 @@ package Inhibition "Inhibition kinetics reactions"
     annotation(Documentation(info = "", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Ualii;
   annotation(Documentation(info = "<p>In this package, different types of irreversible and reversible inhibition reaction kinetics are collected, for example, competitive, non-competitive, and uncompetitive.</p>
- <p><img src=\"../../Images/Inhibition.png\" ></p>
+ <p><img src=\"modelica://BioChem/Resources/Images/Inhibition.png\" ></p>
   ", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Inhibition;

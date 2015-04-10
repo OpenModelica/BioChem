@@ -94,6 +94,6 @@ package BiSubstrate "Bi-substrate reactions"
     annotation(Documentation(info = "", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Ordbbr;
   annotation(Documentation(info = "<p>This package contains models for bi-substrate reactions.
- <p><img src=\"../../Images/BiSubstrate.png\" >
+ <p><img src=\"modelica://BioChem/Resources/Images/BiSubstrate.png\" >
   ", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end BiSubstrate;

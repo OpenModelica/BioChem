@@ -31,6 +31,6 @@ package HyperbolicModifier "Hyperbolic modifier kinetics reactions"
     annotation(Documentation(info = "", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Uhmr;
   annotation(Documentation(info = "<p>This package contains models for irreversible and reversible hyperbolic modifier reaction kinetics.
- <p><img src=\"../../Images/Hyper.png\" >
+ <p><img src=\"modelica://BioChem/Resources/Images/Hyper.png\" >
   ", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end HyperbolicModifier;

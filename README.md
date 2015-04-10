@@ -1,4 +1,4 @@
-# BioChem
+﻿# BioChem
 
 Free library for biochemical modeling and simulation with Modelica.
 
@@ -10,7 +10,7 @@ The classes implemented in the BioChem library describe substances and reactions
 take place in-between these substances in a diverse number of biochemical pathways.
 
 
-![Library](BioChem/Images/Library.png)
+![Library](BioChem/Resources/Images/Library.png)
 
 
 ## Current release

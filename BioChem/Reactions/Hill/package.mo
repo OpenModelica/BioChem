@@ -68,6 +68,6 @@ package Hill "Hill kinetics reactions"
     annotation(Documentation(info = "", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Hillmmr;
   annotation(Documentation(info = "<p>This package contains models for Hill kinetics.
- <p><img src=\"../../Images/Hill.png\" >
+ <p><img src=\"modelica://BioChem/Resources/Images/Hill.png\" >
   ", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Hill;

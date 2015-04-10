@@ -87,6 +87,6 @@ package Activation "Activation kinetics reactions"
     annotation(Documentation(info = "", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Umar;
   annotation(Documentation(info = "<p>This package contains models for irreversible and reversible activation reaction kinetics.</p>
- <p><img src=\"../../Images/Activation.png\"></p>
+ <p><img src=\"modelica://BioChem/Resources/Images/Activation.png\"></p>
   ", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Activation;

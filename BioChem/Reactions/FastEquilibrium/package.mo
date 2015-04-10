@@ -268,5 +268,5 @@ package FastEquilibrium "Base classes for reactions with fast (instant) equilibr
     annotation(Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end Mmf;
   annotation(Diagram(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})), Documentation(info = "<p>The reaction in the FastEquilibrium package is used to model reactions that are very fast, and could be seen as an instant balance. These models are approximated to very fast reactions, if translated to SBML.</p>
- <p><img src=\"../Images/Fast.png\" alt=\"\" /></p>", revisions = ""));
+ <p><img src=\"modelica://BioChem/Resources/Images/Fast.png\" alt=\"\" /></p>", revisions = ""));
 end FastEquilibrium;
