@@ -1,80 +1,99 @@
 within BioChem;
-package Substances "Reaction nodes"
-  extends Icons.Library;
-  annotation(Documentation(info="<html>
-<h1>Substances</h1>
- <p>
- This package contains different types of nodes needed for representing a substance in a biochemical pathway.
- Substances are connected to reactions through connectors placed
- on the rim of the circle representing the substance.<br>
-The substance models are specified by extending the partial models of substance nodes in
-<a href=\"Modelica://BioChem.Interfaces.Substances\">Substances</a>
- and adding additional attributes and equations.
-The
-<a href=\"Modelica://BioChem.Substances.Substance\">Substances</a>
 
- model is used when the concentration in a substance node is allowed to change without restrictions during a simulation, while
-
-<a href=\"Modelica://BioChem.Substances.BoundarySubstance\">BoundarySubstances</a>
- is used when the concentration can only be changed using events. This correspond to species with the fixed or boundary attribute set in SBML.<br>
-The
-<a href=\"Modelica://BioChem.Substances.AmbientSubstance\">AmbientSubstance</a>
- is a substance used as a reservoir in reactions. This corresponds to the empty list of reactants or the empty list of products in an SBML reaction.
-When the concentration is not determined by reactions, the
-
-<a href=\"Modelica://BioChem.Substances.SignalSubstance\">SignalSubstance</a>
- model is used. Then the substance concentration is regulated by external equations, and it  corresponds to SBML species changed by any SBML rules.
- </p>
-<a name=\"fig1\"></a>
-<img src=\"modelica://BioChem/Resources/Images/Substance.png\" alt=\"Fig1: Substance\">
-</html></html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Ellipse(origin={-10,-50}, lineColor={0,56,0}, fillColor={0,85,0}, fillPattern=FillPattern.Sphere, extent={{-60,-20},{-20,20}}),Ellipse(origin={38,-10}, lineColor={100,100,0}, fillColor={255,255,0}, fillPattern=FillPattern.Sphere, extent={{-28,-60},{12,-20}}),Ellipse(origin={-30.0032,-2.75056}, lineColor={0,0,71}, fillColor={0,0,127}, fillPattern=FillPattern.Sphere, extent={{0.0032,-13.4697},{40,26.5303}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-  model Substance "Substance with variable concentration"
-    annotation(Documentation(info="<html>
- <p>
- A substance with variable concentration.
- </p>
- </html>"), Icon(coordinateSystem(extent={{-100,-100},{100,100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={7.10543e-15,50}, fillPattern=FillPattern.Solid, extent={{-100,-150},{100,-100}}, textString="%name", fontName="Arial"),Ellipse(lineColor={0,85,0}, fillColor={0,170,0}, fillPattern=FillPattern.Sphere, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    extends BioChem.Interfaces.Substances.Substance;
-  equation
-    der(n)=rNet;
-  end Substance;
-
-  model BoundarySubstance "Substance with a concentration not determined by reactions, but by events"
-    annotation(Documentation(info="<html>
-<p>
-Substance with a concentration not determined by reactions, i.e., the substance is on the <em>boundary</em> of the reaction system.
-The concentration of the substance can only be changed by events.
-<p>
-Corresponds to SBML species not changed by any SBML rules and with either or both of the <em>boundaryCondition</em> and <em>fixed</em> attributes set to true
-</p>
-</html>"), Icon(coordinateSystem(extent={{-100,-100},{100,100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={-1.42109e-14,50}, fillPattern=FillPattern.Solid, extent={{-100,-150},{100,-100}}, textString="%name", fontName="Arial"),Ellipse(lineColor={170,0,0}, fillColor={255,0,0}, fillPattern=FillPattern.Sphere, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    extends BioChem.Interfaces.Substances.InputSubstance(n.stateSelect=StateSelect.prefer,c.stateSelect=StateSelect.prefer);
-  equation
-    der(n)=0;
-  end BoundarySubstance;
+package Substances "Package with substance nodes"
+  extends BioChem.Icons.Library;
 
   model AmbientSubstance "Substance used as a reservoir in reactions"
-    annotation(Documentation(info="<html>
-<p>
-Substance used as a reservoir in reactions.
-<p>
-Corresponds to the empty list of reactants or the empty list of products in an SBML reaction.
-</p>
-</html>"), Icon(coordinateSystem(extent={{-100,-100},{100,100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={1.77636e-15,50}, fillPattern=FillPattern.Solid, extent={{-100,-150},{100,-100}}, textString="%name", fontName="Arial"),Line(points={{-50,-50},{50,50}}, thickness=10)}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    extends BioChem.Interfaces.Substances.Substance;
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {0, 0}, extent = {{-16, -16}, {16, 16}}, rotation = 0)));
+  protected
+    BioChem.Units.Concentration c "Current concentration of substance (mol/l)";
+    BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
+    BioChem.Units.AmountOfSubstance n "Number of moles of substance in pool (mol)";
+    outer BioChem.Units.Volume V "Compartment volume";
   equation
-    der(n)=0;
+    rNet = n1.r;
+    c = n1.c;
+    V = n1.V;
+    c * V = n;
+    der(c * V) = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART ambientSubstanceTag -->
+    <body>
+    Substance used as a reservoir in reactions. Its concentration or amount should never be used in any equation or reaction.<br><br>
+ Corresponds to an empty list of reactants or products in an SBML reaction.
+    </body>
+    <!--WSMINSERTIONTAGEND ambientSubstanceTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Text(visible = true, origin = {0, 50}, extent = {{-100, -150}, {100, -100}}, textString = "%name", fontName = "Arial"), Line(visible = true, points = {{-50, -50}, {50, 50}}, thickness = 10), Ellipse(visible = true, fillColor = {255, 255, 255}, extent = {{-50, -50}, {50, 50}})}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end AmbientSubstance;
 
-  model SignalSubstance "Substance with a concentration not determined by reactions, but by external equations (translated into SBML assignments)"
-    annotation(Documentation(info="<html>
-<p>
-Substance with a concentration not determined by reactions, instead the substance consentration is regulated by external equations.
-<p>
-Corresponds to SBML species changed by any SBML rules.
-</p>
-</html>"), Icon(coordinateSystem(extent={{-100,-100},{100,100}}, preserveAspectRatio=true, grid={10,10}), graphics={Text(origin={7.10543e-15,50}, fillPattern=FillPattern.Solid, extent={{-100,-150},{100,-100}}, textString="%name", fontName="Arial"),Ellipse(lineColor={0,0,127}, fillColor={85,170,255}, fillPattern=FillPattern.Sphere, extent={{-50,-50},{50,50}})}), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
-    extends BioChem.Interfaces.Substances.InputSubstance;
+  model BoundarySubstance "Substance with a concentration not determined by reactions, but by events"
+    import BioChem.Types.StateVariable;
+    input BioChem.Units.Concentration c(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.prefer else StateSelect.never) "Current concentration of substance (mol/l)" annotation(Dialog(group = "Initialization", showStartAttribute = true));
+    BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
+    BioChem.Units.AmountOfSubstance n(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.never else StateSelect.prefer) "Number of moles of substance in pool (mol)" annotation(Dialog(group = "Initialization", showStartAttribute = true));
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {0, 0}, extent = {{-16, -16}, {16, 16}}, rotation = 0)));
+    parameter StateVariable use = StateVariable.c "Specifies whether to use the initial value of variable c or n. The initial values are mutually exclusive." annotation(Dialog(group = "Variable selection"));
+  protected
+    outer BioChem.Units.Volume V "Compartment volume";
+  equation
+    rNet = n1.r;
+    c = n1.c;
+    V = n1.V;
+    c * V = n;
+    der(c * V) = 0;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART boundarySubstanceTag -->
+    <body>
+    Substance with a concentration not determined by reactions, but by events. The concentration or amount of substance is changed by specifying when-equations in the \"TextView\" of the compartment.<h4>Examples</h4>
+     Set the concentration to 3 when the time passes 2:<br><br> when time>2 then<br>reinit(<i>nameOfSubstance</i>,3);<br>end when;
+    </body>
+    <!--WSMINSERTIONTAGEND boundarySubstanceTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Text(visible = true, origin = {0, 50}, extent = {{-100, -150}, {100, -100}}, textString = "%name", fontName = "Arial"), Ellipse(visible = true, lineColor = {161, 35, 41}, fillColor = {254, 161, 164}, fillPattern = FillPattern.Sphere, extent = {{-50, -50}, {50, 50}})}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end BoundarySubstance;
+
+  model SignalSubstance "Substance with a concentration not determined by reactions, but by external equations"
+    import BioChem.Types.StateVariable;
+    input BioChem.Units.Concentration c(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.prefer else StateSelect.never) "Current concentration of substance (mol/l)" annotation(Dialog(group = "Variables"));
+    BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
+    BioChem.Units.AmountOfSubstance n(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.never else StateSelect.prefer) "Number of moles of substance in pool (mol)" annotation(Dialog(group = "Variables"));
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {0, 0}, extent = {{-16, -16}, {16, 16}}, rotation = 0)));
+    parameter StateVariable use = StateVariable.c "Specifies whether to use the initial value of variable c or n. The initial values are mutually exclusive." annotation(Dialog(group = "Variable selection"));
+  protected
+    outer BioChem.Units.Volume V "Compartment volume";
+  equation
+    rNet = n1.r;
+    c = n1.c;
+    V = n1.V;
+    c * V = n;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART signalSubstanceTag -->
+    <body>
+    Substance with a concentration that is not determined by reactions but by an external equation. The equation should be specified in the \"Text View\" of the compartment model.<br><br>
+ The SignalSubstance corresponds to an SBML species changed by SBML rules.
+    </body>
+    <!--WSMINSERTIONTAGEND signalSubstanceTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Text(visible = true, origin = {0, 50}, extent = {{-100, -150}, {100, -100}}, textString = "%name", fontName = "Arial"), Ellipse(visible = true, lineColor = {42, 95, 163}, fillColor = {110, 176, 255}, fillPattern = FillPattern.Sphere, extent = {{-50, -50}, {50, 50}})}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
   end SignalSubstance;
 
+  model Substance "Standard substance with concentration determined by reactions"
+    import BioChem.Types.StateVariable;
+    BioChem.Units.Concentration c(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.prefer else StateSelect.never) "Current concentration of substance (mol/l)" annotation(Dialog(group = "Initialization", showStartAttribute = true));
+    BioChem.Units.MolarFlowRate rNet "Net flow rate of substance into the node";
+    BioChem.Units.AmountOfSubstance n(stateSelect = if use == BioChem.Types.StateVariable.c then StateSelect.never else StateSelect.prefer) "Number of moles of substance in pool (mol)" annotation(Dialog(group = "Initialization", showStartAttribute = true));
+    BioChem.Interfaces.Nodes.SubstanceConnector n1 annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {0, 0}, extent = {{-16, -16}, {16, 16}}, rotation = 0)));
+    parameter StateVariable use = StateVariable.c "Specifies whether to use the initial value of variable c or n. The initial values are mutually exclusive." annotation(Dialog(group = "Variable selection"));
+  protected
+    outer BioChem.Units.Volume V "Compartment volume";
+  equation
+    rNet = n1.r;
+    c = n1.c;
+    V = n1.V;
+    c * V = n;
+    der(c * V) = rNet;
+    annotation(Documentation(info = "<html><!--WSMINSERTIONTAGSTART substanceTag -->
+    <body>
+    A substance with a concentration determined by the reactions it is connected to. This is the standard component used to represent substances in a pathway.
+    </body>
+    <!--WSMINSERTIONTAGEND substanceTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Text(visible = true, origin = {0, 50}, extent = {{-100, -150}, {100, -100}}, textString = "%name", fontName = "Arial"), Ellipse(visible = true, lineColor = {50, 128, 50}, fillColor = {146, 227, 144}, fillPattern = FillPattern.Sphere, extent = {{-50, -50}, {50, 50}})}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
+  end Substance;
+  annotation(__Wolfram(itemFlippingEnabled = true), Documentation(info = "<html><!--WSMINSERTIONTAGSTART substancesTag -->
+    <body>
+    This package contains different types of nodes used to represent substances and signals in a biochemical pathway. The nodes are connected to reactions through connectors placed on the rim of the circle representing the substance.<h4>See also</h4>
+     <ul><li><a href=\"Modelica://BioChem.Compartments\">Compartments</a></li><li><a href=\"Modelica://BioChem.Reactions\">Reactions</a></li></ul>
+    </body>
+    <!--WSMINSERTIONTAGEND substancesTag --></html>", revisions = ""), Icon(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10}), graphics = {Ellipse(visible = true, origin = {-30.0, -20.0}, lineColor = {26, 118, 164}, fillColor = {26, 118, 164}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, lineThickness = 0, extent = {{20.0, -20.0}, {-20.0, 20.0}}), Ellipse(visible = true, origin = {30.0, -20.0}, lineColor = {100, 100, 0}, fillColor = {0, 74, 109}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, lineThickness = 0, extent = {{20.0, -20.0}, {-20.0, 20.0}}), Ellipse(visible = true, origin = {0.0, 30.0}, lineColor = {128, 128, 128}, fillColor = {0, 170, 255}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, lineThickness = 0, extent = {{20.0, -20.0}, {-20.0, 20.0}})}), Diagram(coordinateSystem(extent = {{-100, -100}, {100, 100}}, preserveAspectRatio = true, initialScale = 0.1, grid = {10, 10})));
 end Substances;
