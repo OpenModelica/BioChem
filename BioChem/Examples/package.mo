@@ -133,7 +133,7 @@ package Examples "Some examples of BioChem models"
  to obtain a fully functional model, realistic parameter values must be used.
  </p>
  </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10}), graphics={Ellipse(fillColor={170,0,0}, fillPattern=FillPattern.Solid, extent={{-100,-25},{-50,25}}),Ellipse(fillColor={0,85,0}, fillPattern=FillPattern.Solid, extent={{50,-25},{100,25}}),Line(points={{-50,0},{50,0}}, arrow={Arrow.Open,Arrow.Open}, arrowSize=30)}));
-    extends BioChem.Compartments.Compartment;
+    extends BioChem.Compartments.Compartment(V(fixed=true));
     Substances.Substance F6P(c(start=2, fixed=true)) "Fructose-6-phosphate" annotation(Placement(transformation(origin={10,10}, extent={{-10,-10},{10,10}})));
     Reactions.MichaelisMenten.Uur uur(vF=1.5, KmS=0.1, KmP=0.05) annotation(Placement(transformation(origin={-10,10}, extent={{-10,-10},{10,10}})));
     Substances.Substance G6P(c(start=1, fixed=true)) "Glucose-6-phosphate" annotation(Placement(transformation(origin={-30,10}, extent={{-10,-10},{10,10}})));
