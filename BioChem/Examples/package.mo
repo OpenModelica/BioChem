@@ -123,7 +123,7 @@ package Examples "Some examples of BioChem models"
   end Glycolysis;
 
   model EnzMM "An enzymatic reaction with Michaelis-Menten kinetics"
-    annotation(Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+    annotation(Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), experiment(StartTime=0.0, StopTime=10.0));
     annotation(Documentation(info="<html>
 <h1>EnzMM</h1>
 
