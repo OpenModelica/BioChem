@@ -3,27 +3,6 @@ within BioChem.Interfaces.Reactions;
 package Modifiers "Partial models of modifiers to reactions"
   extends Icons.Library;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   annotation(
     Documentation(info = "", revisions = ""),
     Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
