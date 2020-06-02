@@ -1,4 +1,5 @@
 within BioChem.Reactions;
+
 package Inhibition "Inhibition kinetics reactions"
   extends Icons.Library;
   annotation(Documentation(info="<html>
