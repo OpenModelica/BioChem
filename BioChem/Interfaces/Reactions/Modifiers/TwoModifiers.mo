@@ -1,6 +1,6 @@
 within BioChem.Interfaces.Reactions.Modifiers;
 
-model TwoModifiers "Basics for two modifiers in a reaction edge"
+partial model TwoModifiers "Basics for two modifiers in a reaction edge"
   BioChem.Interfaces.Nodes.ModifierConnector m2 annotation(
     Placement(transformation(origin = {50, 90}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {50, 90}, extent = {{-20, -20}, {20, 20}})));
   BioChem.Interfaces.Nodes.ModifierConnector m1 annotation(
