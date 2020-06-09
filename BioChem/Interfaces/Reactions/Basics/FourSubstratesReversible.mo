@@ -1,6 +1,6 @@
 within BioChem.Interfaces.Reactions.Basics;
 
-model FourSubstratesReversible
+partial model FourSubstratesReversible
   BioChem.Interfaces.Nodes.SubstrateConnector s4 annotation(
     Placement(transformation(origin = {-90, -87.5}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {-112.5, -87.5}, extent = {{-12.5, -12.5}, {12.5, 12.5}})));
   BioChem.Interfaces.Nodes.SubstrateConnector s2 annotation(
