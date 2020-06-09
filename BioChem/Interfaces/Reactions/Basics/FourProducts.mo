@@ -1,6 +1,6 @@
 within BioChem.Interfaces.Reactions.Basics;
 
-model FourProducts
+partial model FourProducts
   BioChem.Interfaces.Nodes.ProductConnector p4 annotation(
     Placement(transformation(origin = {100, -40}, extent = {{-10, -10}, {10, 10}}), iconTransformation(origin = {112.5, -87.5}, extent = {{-12.5, -12.5}, {12.5, 12.5}})));
   BioChem.Interfaces.Nodes.ProductConnector p2 annotation(
