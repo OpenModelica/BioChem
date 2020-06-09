@@ -1,6 +1,6 @@
 within BioChem.Interfaces.Reactions;
 
-model Qui "Quad-Uni irreversible reaction"
+partial model Qui "Quad-Uni irreversible reaction"
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
