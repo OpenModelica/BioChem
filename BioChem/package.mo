@@ -1,22 +1,5 @@
-package BioChem
+﻿package BioChem
   extends Icons.Library;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   annotation(
     preferedView = "info",

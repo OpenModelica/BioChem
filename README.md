@@ -15,7 +15,7 @@ take place in-between these substances in a diverse number of biochemical pathwa
 
 ## Current release
 
-Download [BioChem v1.0.2 for MSL v3.2.2 (2020-06-02)](../../archive/v1.0.2.zip)
+Download [BioChem v1.0.2 for MSL v3.2.3 (2020-06-02)](../../archive/v1.0.2.zip)
 
 #### Release notes
 
