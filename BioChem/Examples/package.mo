@@ -1,7 +1,7 @@
 within BioChem;
 
 package Examples "Some examples of BioChem models"
-  extends Icons.Library;
+  extends Modelica.Icons.ExamplesPackage;
 
   model InsulinSignaling_Sedaghat "Metabolic insulin signaling pathway in rat adipocytes"
     extends BioChem.Compartments.Compartment;
