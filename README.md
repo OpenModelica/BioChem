@@ -15,11 +15,13 @@ take place in-between these substances in a diverse number of biochemical pathwa
 
 ## Current release
 
-Download [BioChem v1.0.2 for MSL v3.2.3 (2020-06-02)](../../archive/v1.0.2.zip)
+Download [BioChem v1.0.3 for MSL v4.0.0 (2021-04-06)](../../archive/v1.0.3.zip)
 
 #### Release notes
 
-* [Version v1.0.2 (2020-06-02)](../../archive/v1.0.1.zip)
+* [Version v1.0.3 (2021-04-06)](../../archive/v1.0.3.zip)
+  * Conversion script to MSL 4.0.0
+* [Version v1.0.2 (2020-06-02)](../../archive/v1.0.2.zip)
   * Summary: All major components into separate *.mo files, Converted to MSL 3.2.3
 * [Version v1.0.1 (2013-04-18)](../../archive/v1.0.1.zip)
   * Summary: Converted to MSL 3.2.1
