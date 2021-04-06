@@ -1,6 +1,5 @@
 within BioChem;
 package Units "Units used in BioChem"
-<<<<<<< HEAD
   extends BioChem.Icons.UnitsPackage;
  annotation(Documentation(info="<html>
 <h1>Units</h1>
@@ -8,9 +7,6 @@ package Units "Units used in BioChem"
  This pace contains definitions of units that are common in biochemical models.
  </p>
  </html>", revisions=""));
-=======
-  extends Icons.Library;
->>>>>>> master
   type VolumetricReactionRate= Real(quantity="Volumetric reaction rate", unit="mol/(s.l)") annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   type VolumeChangeConstant= Real(quantity="Volume change constant", unit="l/s") annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
   type Volume= Modelica.Units.NonSI.Volume_litre annotation(Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
