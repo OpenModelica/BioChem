@@ -24,7 +24,7 @@ package Math
   end factorial;
 
   function sec "secant trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / cos(alpha);
@@ -34,7 +34,7 @@ package Math
   end sec;
 
   function cot "Cotangent trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / tan(alpha);
@@ -44,7 +44,7 @@ package Math
   end cot;
 
   function csc "cosecant trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / sin(alpha);
@@ -54,7 +54,7 @@ package Math
   end csc;
 
   function sech "hyperbolic secant trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / cosh(alpha);
@@ -64,7 +64,7 @@ package Math
   end sech;
 
   function csch "hyperbolic cosecant trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / sinh(alpha);
@@ -74,7 +74,7 @@ package Math
   end csch;
 
   function coth "hyperbolic cotangent trigonometric function"
-    input Modelica.SIunits.Angle alpha "input angle";
+    input Modelica.Units.SI.Angle alpha "input angle";
     output Real y "output value";
   algorithm
     y := 1 / tanh(alpha);
