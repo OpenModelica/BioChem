@@ -17,10 +17,6 @@ package Units "Units used in BioChem"
     extends Modelica.Units.SI.Pressure;
     annotation(Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
   end Pressure;
-  type VolumeChangeConstant = Icons.Units.TypeRealBase(quantity = "Volume change constant", unit = "l/s") "Volume change constant [1/s]" ;
-  type VolumetricReactionRate =
-     Icons.Units.TypeRealBase(final quantity="Volumetric reaction rate",final unit = "mol/(s.l)")
-     "Volumetric reaction rate [mol/(l.s)}" ;
   type ReactionCoefficient = Icons.Units.TypeRealBase(quantity = "Reaction coefficient", unit = "1") "Reaction coefficient" ;
   type ReactionRate = Icons.Units.TypeRealBase(quantity = "Reaction rate", unit = "mol/s") "Reaction rate [mos/s]";
   type StoichiometricCoefficient = Icons.Units.TypeRealBase(quantity = "Stoichiometric coefficient", unit = "1") "Stoichiometric coefficient";
@@ -28,6 +24,10 @@ package Units "Units used in BioChem"
     extends Modelica.Units.NonSI.Volume_litre;
     annotation(Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
   end Volume;
+  type VolumeChangeConstant = Icons.Units.TypeRealBase(quantity = "Volume change constant", unit = "l/s") "Volume change constant [1/s]" ;
+  type VolumetricReactionRate =
+     Icons.Units.TypeRealBase(final quantity="Volumetric reaction rate",final unit = "mol/(s.l)")
+     "Volumetric reaction rate [mol/(l.s)}" ;
   annotation(
     Documentation(info = "<html>
 <h1>Units</h1>
