@@ -1,7 +1,7 @@
 within BioChem.Icons.Interfaces;
 
 package Substances
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   annotation(
     Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
     Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
