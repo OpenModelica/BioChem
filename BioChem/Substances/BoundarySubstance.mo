@@ -1,7 +1,7 @@
 within BioChem.Substances;
 
 model BoundarySubstance "Substance with a concentration not determined by reactions, but by events"
-  extends Icons.Substances.BoundarySubstance;
+  extends BioChem.Icons.Substances.BoundarySubstance;
   extends BioChem.Interfaces.Substances.InputSubstance(n.stateSelect = StateSelect.prefer, c.stateSelect = StateSelect.prefer);
 equation
   der(n) = 0;

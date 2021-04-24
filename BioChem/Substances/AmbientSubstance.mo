@@ -1,7 +1,7 @@
 within BioChem.Substances;
 
 model AmbientSubstance "Icon for a substance used as a reservoir in reactions"
-  extends Icons.Substances.AmbientSubstance;
+  extends BioChem.Icons.Substances.AmbientSubstance;
   extends BioChem.Interfaces.Substances.Substance;
 equation
   der(n) = 0;

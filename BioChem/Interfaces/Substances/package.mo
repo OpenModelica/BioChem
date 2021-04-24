@@ -1,6 +1,6 @@
 within BioChem.Interfaces;
 package Substances
-  extends Icons.Library;
+  extends BioChem.Icons.Interfaces.Substances;
 
   annotation(Documentation(info="<html>
 <h1>Substances</h1>

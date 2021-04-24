@@ -1,7 +1,7 @@
 within BioChem.Substances;
 
 model SignalSubstance "Icon for a substance with a concentration not determined by reactions, but by external equations (translated into SBML assignments)"
-  extends Icons.Substances.SignalSubstance;
+  extends BioChem.Icons.Substances.SignalSubstance;
   extends BioChem.Interfaces.Substances.InputSubstance;
   annotation(
     Documentation(info = "<html>
