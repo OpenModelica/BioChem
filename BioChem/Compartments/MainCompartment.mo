@@ -1,8 +1,8 @@
 within BioChem.Compartments;
 
 model MainCompartment "Main compartment (constant volume)"
-  extends Icons.Compartments.MainCompartment;
   extends BioChem.Interfaces.Compartments.MainCompartment(V(stateSelect = StateSelect.prefer));
+  extends Icons.Compartments.MainCompartment;
 equation
   der(V) = 0 "Compartment volume is constant";
   annotation(
