@@ -1,7 +1,7 @@
 within BioChem.Interfaces;
 
 package Reactions "Partial models, extended by models in the subpackage Reactions"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   
   annotation(
     Documentation(info = "<html>
