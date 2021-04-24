@@ -1,4 +1,4 @@
-within BioChem.Interfaces;
+within BioChem.Icons.Interfaces;
 package Nodes "Connector interfaces used in the package"
   extends BioChem.Icons.Library;
   annotation(Documentation(info="<html>
