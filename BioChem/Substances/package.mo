@@ -1,7 +1,7 @@
 within BioChem;
 
 package Substances "Reaction nodes"
-  extends BioChem.Icons.Substances.PackageIcon;
+  extends BioChem.Icons.Substances;
 
     annotation(
     Documentation(info = "<html>
