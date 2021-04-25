@@ -1,7 +1,7 @@
 within BioChem;
 
 package Units "Units used in BioChem"
-  extends BioChem.Icons.Units.PackageIcon;
+  extends BioChem.Icons.Units;
   type AmountOfSubstance = Icons.Units.TypeRealBase(quantity = "AmountOfSubstance", unit = "mol", min = 0) "Amount of substance [mol]" ;
   type Celcius 
     extends Modelica.Units.NonSI.Temperature_degC ;
