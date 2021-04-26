@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 package Modifiers "Partial models of modifiers to reactions"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
 
   annotation(
     Documentation(info = "", revisions = ""),
