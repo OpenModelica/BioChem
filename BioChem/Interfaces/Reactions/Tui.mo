@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tui "Tri-Uni irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Tui;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -13,7 +14,4 @@ equation
   s2.r = nS2 * rr;
   s3.r = nS3 * rr;
   p1.r = -nP1 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Tui;

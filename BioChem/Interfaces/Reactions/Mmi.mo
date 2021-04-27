@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Mmi "Multi-Multi irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Mmi;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.MultipleSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
@@ -9,7 +10,4 @@ partial model Mmi "Multi-Multi irreversible reaction"
 equation
   s.r = nS * rr;
   p.r = -nP * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Mmi;

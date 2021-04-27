@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tqi "Tri-Quad irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Tqi;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.FourProducts;
@@ -19,7 +20,4 @@ equation
   p2.r = -nP2 * rr;
   p3.r = -nP3 * rr;
   p4.r = -nP4 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Tqi;

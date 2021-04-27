@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tmr "Tri-Multi reversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Tmr;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
@@ -13,7 +14,4 @@ equation
   s2.r = nS2 * rr;
   s3.r = nS3 * rr;
   p.r = -nP * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Tmr;

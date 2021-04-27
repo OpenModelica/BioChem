@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tti "Tri-Tri irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Tti;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.ThreeProducts;
@@ -17,7 +18,4 @@ equation
   p1.r = -nP1 * rr;
   p2.r = -nP2 * rr;
   p3.r = -nP3 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Tti;

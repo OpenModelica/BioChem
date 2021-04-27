@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Mui "Multi-Uni irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Mui;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.MultipleSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -9,7 +10,4 @@ partial model Mui "Multi-Uni irreversible reaction"
 equation
   s.r = nS * rr;
   p1.r = -nP1 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Mui;

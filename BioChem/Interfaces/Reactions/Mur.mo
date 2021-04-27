@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Mur "Multi-Uni reversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Mur;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.MultipleSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -9,7 +10,4 @@ partial model Mur "Multi-Uni reversible reaction"
 equation
   s.r = nS * rr;
   p1.r = -nP1 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Mur;

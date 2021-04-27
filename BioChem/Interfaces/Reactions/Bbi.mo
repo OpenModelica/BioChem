@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bbi "Bi-Bi irreversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Bbi;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.TwoProducts;
@@ -13,7 +14,4 @@ equation
   s2.r = nS2 * rr;
   p1.r = -nP1 * rr;
   p2.r = -nP2 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Bbi;

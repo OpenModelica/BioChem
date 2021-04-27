@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qur "Quad-Uni reversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Qur;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -15,7 +16,4 @@ equation
   s3.r = nS3 * rr;
   s4.r = nS4 * rr;
   p1.r = -nP1 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Qur;

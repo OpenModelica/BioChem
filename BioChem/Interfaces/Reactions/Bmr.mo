@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bmr "Bi-Multi reversible reaction"
+  extends BioChem.Icons.Interfaces.Reactions.Bmr;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
@@ -11,7 +12,4 @@ equation
   s1.r = nS1 * rr;
   s2.r = nS2 * rr;
   p.r = -nP * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Bmr;
