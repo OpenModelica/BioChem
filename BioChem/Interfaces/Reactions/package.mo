@@ -17,7 +17,5 @@ All reactions need at least one substrate and at least one product. This package
 <img src=\"modelica://BioChem/Resources/Images/Reactions.png\" alt=\"Fig1:Reactions\"><br>
 <i>Figure 1:  Some of the reactions</i><br>
 
- </html>", revisions = ""),
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
+ </html>", revisions = ""));
 end Reactions;
