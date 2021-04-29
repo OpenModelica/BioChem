@@ -27,7 +27,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ping pong bi-bi kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ppbr;
 
   model Ordubr "Ordered uni-bi kinetics"
@@ -50,7 +50,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered uni-bi kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ordubr;
 
   model Ordbur "Ordered bi-uni kinetics"
@@ -73,7 +73,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered bi-uni kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ordbur;
 
   model Ordbbr "Ordered bi-bi kinetics"
@@ -105,7 +105,7 @@ package BiSubstrate "Bi-substrate reactions"
  <p>
  Ordered bi-bi kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ordbbr;
 
   annotation(Documentation(info="<html>
@@ -117,5 +117,5 @@ package BiSubstrate "Bi-substrate reactions"
 <img src=\"modelica://BioChem/Resources/Images/BiSubstrate.png\" >
 <br>
 
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end BiSubstrate;

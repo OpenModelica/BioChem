@@ -1,6 +1,6 @@
 within BioChem.Reactions;
 package MichaelisMenten "Michaelis-Menten kinetics reactions"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   model Uur "Uni-uni reversible simple Michaelis-Menten"
     extends BioChem.Interfaces.Reactions.Uur;
     parameter BioChem.Units.Concentration KmS=1 "Forward Michaelis-Menten constant";
@@ -13,7 +13,7 @@ package MichaelisMenten "Michaelis-Menten kinetics reactions"
  <p>
  Uni-uni reversible simple Michaelis-Menten.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uur;
 
   model Uui "Uni-uni irreversible simple Michaelis-Menten"
@@ -26,7 +26,7 @@ package MichaelisMenten "Michaelis-Menten kinetics reactions"
  <p>
  Uni-uni irreversible simple Michaelis-Menten.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uui;
 
   model Uuhr "Uni-Uni reversible simple Michaelis-Menten with Haldane adjustment"
@@ -41,7 +41,7 @@ package MichaelisMenten "Michaelis-Menten kinetics reactions"
  <p>
  Uni-Uni reversible simple Michaelis-Menten with Haldane adjustment.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uuhr;
 
   model Isouur "Iso uni-uni"
@@ -57,7 +57,7 @@ package MichaelisMenten "Michaelis-Menten kinetics reactions"
  <p>
  Iso uni-uni.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Isouur;
 
   annotation(Documentation(info="<html>
@@ -72,5 +72,5 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
 <br>
 
 
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end MichaelisMenten;
