@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Umi "Uni-Multi irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Umi;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.OneSubstrate;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;

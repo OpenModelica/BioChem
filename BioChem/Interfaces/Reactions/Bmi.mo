@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bmi "Bi-Multi irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Bmi;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;

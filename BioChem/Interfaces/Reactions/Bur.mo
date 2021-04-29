@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bur "Bi-Uni reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Bur;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;

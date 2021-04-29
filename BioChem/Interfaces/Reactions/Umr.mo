@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Umr "Uni-Multi reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Umr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.OneSubstrateReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;

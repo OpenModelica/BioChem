@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qmi "Quad-Multi irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Qmi;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;

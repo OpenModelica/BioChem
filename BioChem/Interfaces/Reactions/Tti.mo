@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tti "Tri-Tri irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Tti;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.ThreeProducts;

@@ -1,7 +1,7 @@
 within BioChem.Icons.Compartments;
 
-partial model MainCompartment "Main compartment (constant volume)"
-  extends Icons.Base;
+partial class MainCompartment "Main compartment (constant volume)"
+  extends BioChem.Icons.Base;
   annotation(
     Documentation(info = "<html>
 <h1>MainCompartment</h1>

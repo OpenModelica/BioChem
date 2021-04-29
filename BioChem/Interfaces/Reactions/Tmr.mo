@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tmr "Tri-Multi reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Tmr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;

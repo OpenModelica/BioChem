@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tqi "Tri-Quad irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Tqi;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.FourProducts;

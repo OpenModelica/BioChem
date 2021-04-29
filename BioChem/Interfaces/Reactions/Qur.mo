@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qur "Quad-Uni reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Qur;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;

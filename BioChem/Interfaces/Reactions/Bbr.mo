@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bbr "Bi-Bi reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Bbr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.TwoProducts;

@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Btr "Bi-Tri reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Btr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.ThreeProducts;

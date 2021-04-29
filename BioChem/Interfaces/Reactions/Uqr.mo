@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Uqr
-  extends BioChem.Icons.Interfaces.Reactions.Uqr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.OneSubstrateReversible;
   extends BioChem.Interfaces.Reactions.Basics.FourProducts;

@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qqr "Quad-Quad reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Qqr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.FourProducts;

@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tur "Tri-Uni reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Tur;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;

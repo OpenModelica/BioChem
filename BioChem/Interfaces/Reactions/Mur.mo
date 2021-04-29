@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Mur "Multi-Uni reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Mur;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.MultipleSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;

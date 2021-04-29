@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Ubi "Uni-Bi irreversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Ubi;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.OneSubstrate;
   extends BioChem.Interfaces.Reactions.Basics.TwoProducts;

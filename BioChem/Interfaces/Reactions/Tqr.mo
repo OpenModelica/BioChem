@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Tqr "Tri-Quad reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Tqr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.ThreeSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.FourProducts;

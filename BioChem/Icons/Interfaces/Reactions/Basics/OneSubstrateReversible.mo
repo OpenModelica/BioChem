@@ -1,6 +1,6 @@
 within BioChem.Icons.Interfaces.Reactions.Basics;
 
-partial model OneSubstrateReversible
+partial class OneSubstrateReversible
   extends BioChem.Icons.Base;
   
    annotation(

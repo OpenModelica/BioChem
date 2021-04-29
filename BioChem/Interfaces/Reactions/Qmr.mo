@@ -1,7 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qmr "Quad-Multi reversible reaction"
-  extends BioChem.Icons.Interfaces.Reactions.Qmr;
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
