@@ -1,6 +1,6 @@
 within BioChem.Interfaces;
 package Nodes "Connector interfaces used in the package"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   annotation(Documentation(info="<html>
 <h1>Nodes</h1>
  <p>

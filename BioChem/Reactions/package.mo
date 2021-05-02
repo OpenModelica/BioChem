@@ -1,7 +1,7 @@
 within BioChem;
 
 package Reactions "Reaction edges"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
 
 
 

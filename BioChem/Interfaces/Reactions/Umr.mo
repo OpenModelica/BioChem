@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Umr "Uni-Multi reversible reaction"
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.OneSubstrateReversible;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
@@ -9,7 +10,4 @@ partial model Umr "Uni-Multi reversible reaction"
 equation
   s1.r = nS1 * rr;
   p.r = -nP * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Umr;

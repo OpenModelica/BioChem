@@ -1,7 +1,7 @@
 within BioChem;
 
 package Compartments "Different types of compartments used in the package"
-  extends Icons.Library;
+  extends Icons.Compartments;
 
   annotation(
     Documentation(info = "<html>
