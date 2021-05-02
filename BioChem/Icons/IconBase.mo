@@ -1,6 +1,10 @@
 within BioChem.Icons;
 
+<<<<<<< HEAD
 model IconBase
+=======
+partial class IconBase
+>>>>>>> master
   extends Modelica.Icons.ObsoleteModel;
   annotation(
     Diagram(coordinateSystem(extent = {{-100.0, -100.0}, {100.0, 100.0}}, preserveAspectRatio = true, grid = {10, 10})),

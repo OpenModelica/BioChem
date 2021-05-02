@@ -1,6 +1,6 @@
 within BioChem.Reactions;
 package MassAction "Mass-action kinetics reactions"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   annotation(Documentation(info="<html>
 <h1>MassAction</h1>
  <p>
@@ -17,5 +17,5 @@ and then adding an equation for the relation between the reaction rate and the p
 <br>
 <img src=\"modelica://BioChem/Resources/Images/MassAction.png\" >
 <br>
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end MassAction;

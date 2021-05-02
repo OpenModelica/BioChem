@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qmi "Quad-Multi irreversible reaction"
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstrates;
   extends BioChem.Interfaces.Reactions.Basics.MultipleProducts;
@@ -15,7 +16,4 @@ equation
   s3.r = nS3 * rr;
   s4.r = nS4 * rr;
   p.r = -nP * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Qmi;

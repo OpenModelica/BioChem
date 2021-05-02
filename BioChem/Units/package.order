@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 VolumetricReactionRate
 VolumeChangeConstant
 Volume
@@ -12,3 +13,19 @@ Concentration
 Celcius
 AmountOfSubstance
 EquilibriumCoefficient
+=======
+AmountOfSubstance
+Celcius
+Concentration
+DilutionRate
+EquilibriumCoefficient
+IonicCharge
+MolarFlowRate
+Pressure
+ReactionCoefficient
+ReactionRate
+StoichiometricCoefficient
+Volume
+VolumeChangeConstant
+VolumetricReactionRate
+>>>>>>> master

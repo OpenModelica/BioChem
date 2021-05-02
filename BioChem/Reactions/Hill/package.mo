@@ -1,6 +1,6 @@
 within BioChem.Reactions;
 package Hill "Hill reactions kinetics"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
   model Hillr "Reversible Hill kinetics"
     extends BioChem.Interfaces.Reactions.Uur;
     parameter Real h=1 "Hill Coefficient";
@@ -14,7 +14,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Reversible Hill kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Hillr;
 
   model Hillmr "Reversible Hill kinetics with one modifier"
@@ -38,7 +38,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Reversible Hill kinetics with one modifier.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Hillmr;
 
   model Hillmmr "Reversible Hill kinetics with two modifiers"
@@ -65,7 +65,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Reversible Hill kinetics with two modifiers.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Hillmmr;
 
   model Hilli "Irreversible Hill kinetics"
@@ -79,7 +79,7 @@ package Hill "Hill reactions kinetics"
  <p>
  Irreversible Hill kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Hilli;
 
   annotation(Documentation(info="<html>
@@ -91,5 +91,5 @@ package Hill "Hill reactions kinetics"
 <br>
 <img src=\"modelica://BioChem/Resources/Images/Hill.png\" >
 <br>
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end Hill;
