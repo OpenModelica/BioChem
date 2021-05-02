@@ -13,8 +13,7 @@
 Users Guide discusses some aspects of the <em>BioChem</em> Library, including a Getting Started chapter</p><p>
 <br>
 </p>
-
- </body></html>", revisions = "<html><head></head><body><h2><br></h2><ul>
+ </body></html>", revisions = "<html><head></head><body><p>See UsersGuide.ReleaseNotes</p><ul>
 </ul>
  </body></html>"),
     uses(Modelica(version = "4.0.0")),
