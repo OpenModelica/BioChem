@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Bur "Bi-Uni reversible reaction"
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.TwoSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.OneProduct;
@@ -11,7 +12,4 @@ equation
   s1.r = nS1 * rr;
   s2.r = nS2 * rr;
   p1.r = -nP1 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Bur;

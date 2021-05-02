@@ -16,7 +16,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Reversible mixed activation kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Umar;
 
   model Umai "Irreversible mixed activation kinetics"
@@ -32,7 +32,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Irreversible mixed activation kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Umai;
 
   model Uctr "Reversible catalytic activation"
@@ -49,7 +49,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Reversible catalytic activation.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uctr;
 
   model Ucti "Irreversible catalytic activation"
@@ -64,7 +64,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Irreversible catalytic activation.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ucti;
 
   model Uar "Reversible specific activation kinetics"
@@ -81,7 +81,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Reversible specific activation kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uar;
 
   model Uaii "Irreversible specific activation kinetics"
@@ -96,7 +96,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Irreversible specific activation kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uaii;
 
   model Uai "Irreversible substrate activation"
@@ -110,7 +110,7 @@ package Activation "Activation kinetics reactions"
  <p>
  Irreversible substrate activation.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uai;
 
   annotation(Documentation(info="<html>
@@ -122,5 +122,5 @@ This package contains models for irreversible and reversible activation reaction
 <br>
 <img src=\"modelica://BioChem/Resources/Images/Activation.png\" >
 <br>
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end Activation;

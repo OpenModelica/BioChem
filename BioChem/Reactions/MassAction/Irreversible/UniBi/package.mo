@@ -1,7 +1,7 @@
 within BioChem.Reactions.MassAction.Irreversible;
 
 package UniBi "A -> B+C reactions"
-  extends Icons.Library;
+  extends BioChem.Icons.Library;
 
   model Ubifi "Uni-bi irrerversible forward inhibition reaction"
     extends BioChem.Interfaces.Reactions.Ubi;
@@ -9,10 +9,6 @@ package UniBi "A -> B+C reactions"
     parameter BioChem.Units.ReactionCoefficient k1 = 1 "Forwards reaction coefficient for the reaction";
   equation
     rr = k1 / iF1.c * s1.c ^ nS1 * s1.V;
-    annotation(
-      Documentation,
-      Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-      Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
   end Ubifi;
 
   model Ubifafi "Uni-bi irrerversible forward activation, forward inhibition reaction"
@@ -22,10 +18,6 @@ package UniBi "A -> B+C reactions"
     parameter BioChem.Units.ReactionCoefficient k1 = 1 "Forwards reaction coefficient for the reaction";
   equation
     rr = k1 * aF1.c / iF1.c * s1.c ^ nS1 * s1.V;
-    annotation(
-      Documentation,
-      Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-      Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
   end Ubifafi;
 
   model Ubifa "Uni-bi irrerversible forward activation reaction"
@@ -41,9 +33,7 @@ package UniBi "A -> B+C reactions"
 <li>Main Author 2006: Erik Ulfhielm</li>
 <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
 </ul>
-</html>"),
-      Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-      Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
+</html>"));
   end Ubifa;
 
   model Ubi "Uni-bi irrerversible reaction"
@@ -58,9 +48,7 @@ package UniBi "A -> B+C reactions"
 <li>Main Author 2006: Erik Ulfhielm</li>
 <li>Main Author 2004-2005: Emma Larsdotter Nilsson</li>
 </ul>
-</html>"),
-      Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-      Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
+</html>"));
   end Ubi;
   annotation(
     Documentation(info = "<html>

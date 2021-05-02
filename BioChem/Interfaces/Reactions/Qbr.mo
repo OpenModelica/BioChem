@@ -1,6 +1,7 @@
 within BioChem.Interfaces.Reactions;
 
 partial model Qbr "Quad-Bi reversible reaction"
+  extends BioChem.Icons.Base;
   extends BioChem.Interfaces.Reactions.Basics.Reaction;
   extends BioChem.Interfaces.Reactions.Basics.FourSubstratesReversible;
   extends BioChem.Interfaces.Reactions.Basics.TwoProducts;
@@ -17,7 +18,4 @@ equation
   s4.r = nS4 * rr;
   p1.r = -nP1 * rr;
   p2.r = -nP2 * rr;
-  annotation(
-    Icon(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})),
-    Diagram(coordinateSystem(extent = {{-100, 100}, {100, -100}}, preserveAspectRatio = true, grid = {10, 10})));
 end Qbr;

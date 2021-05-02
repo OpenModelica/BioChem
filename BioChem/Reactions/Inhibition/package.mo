@@ -16,7 +16,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Uncompetitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uucr;
 
   model Uuci "Irreversible uncompetitive inhibition"
@@ -31,7 +31,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible uncompetitive inhibition.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Uuci;
 
   model Usir "Reversible substrate inhibition kinetics"
@@ -47,7 +47,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Reversible substrate inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Usir;
 
   model Usii "Irreversible substrate inhibition kinetics"
@@ -61,7 +61,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible substrate inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Usii;
 
   model Unir "Noncompetitive inhibition (reversible)"
@@ -78,7 +78,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Noncompetitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Unir;
 
   model Unii "Irreversible non-competitive inhibition kinetics"
@@ -93,7 +93,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible non-competitive inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Unii;
 
   model Umr "Reversible mixed inhibition kinetics"
@@ -111,7 +111,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Reversible mixed inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Umr;
 
   model Umi "Irreversible mixed inhibition kinetics"
@@ -127,7 +127,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible mixed inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Umi;
 
   model Ucir "Competitive inhibition (reversible)"
@@ -144,7 +144,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Competitive inhibition (reversible).
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ucir;
 
   model Ucii "Irreversible competitive inhibition kinetics"
@@ -159,7 +159,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible competitive inhibition kinetics.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ucii;
 
   model Ualii "Irreversible allosteric inhibition"
@@ -176,7 +176,7 @@ package Inhibition "Inhibition kinetics reactions"
  <p>
  Irreversible allosteric inhibition.
  </p>
- </html>"), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>"));
   end Ualii;
 
   annotation(Documentation(info="<html>
@@ -188,8 +188,5 @@ In this package, different types of irreversible and reversible inhibition react
 <br>
 <img src=\"modelica://BioChem/Resources/Images/Inhibition.png\" >
 <br>
-
-
-
- </html>", revisions=""), Icon(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})), Diagram(coordinateSystem(extent={{-100,100},{100,-100}}, preserveAspectRatio=true, grid={10,10})));
+ </html>", revisions=""));
 end Inhibition;
