@@ -1,11 +1,7 @@
 within BioChem;
 
 package Substances "Reaction nodes"
-<<<<<<< HEAD
-  extends BioChem.Icons.Substances.PackageIcon;
-=======
   extends BioChem.Icons.Substances;
->>>>>>> master
 
     annotation(
     Documentation(info = "<html>
