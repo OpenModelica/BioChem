@@ -70,7 +70,5 @@ Michaelis-Menten kinetics describes the kinetics of many enzymes. It is named af
 <br>
 <img src=\"modelica://BioChem/Resources/Images/MichaelisMenten.png\" >
 <br>
-
-
  </html>", revisions=""));
 end MichaelisMenten;
