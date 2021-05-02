@@ -189,7 +189,5 @@ In this package, different types of irreversible and reversible inhibition react
 <img src=\"modelica://BioChem/Resources/Images/Inhibition.png\" >
 <br>
 
-
-
  </html>", revisions=""));
 end Inhibition;

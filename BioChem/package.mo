@@ -14,8 +14,6 @@ Users Guide discusses some aspects of the <em>BioChem</em> Library, including a 
 <br>
 </p>
 
-
-
  </body></html>", revisions = "<html><head></head><body><h2><br></h2><ul>
 </ul>
  </body></html>"),

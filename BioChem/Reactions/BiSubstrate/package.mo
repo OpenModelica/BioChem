@@ -116,6 +116,5 @@ package BiSubstrate "Bi-substrate reactions"
 <br>
 <img src=\"modelica://BioChem/Resources/Images/BiSubstrate.png\" >
 <br>
-
  </html>", revisions=""));
 end BiSubstrate;
