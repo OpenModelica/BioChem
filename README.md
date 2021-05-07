@@ -15,10 +15,14 @@ take place in-between these substances in a diverse number of biochemical pathwa
 
 ## Current release
 
-Download [BioChem v1.0.3 for MSL v4.0.0 (2021-04-06)](../../archive/v1.0.3.zip)
+Download [BioChem v1.1.0 for MSL v4.0.0 (2021-05-02)](../../archive/v1.1.0.zip)
 
 #### Release notes
 
+* [Version v1.1.0 (2021-05-02)](../../archive/v1.1.0.zip)
+  * Moving, simplifying and cleaning embedded graphical annotations to own package Icons 
+  * A UsersGuide package 
+  * Improved implementation of Units package  
 * [Version v1.0.3 (2021-04-06)](../../archive/v1.0.3.zip)
   * Conversion script to MSL 4.0.0
 * [Version v1.0.2 (2020-06-02)](../../archive/v1.0.2.zip)

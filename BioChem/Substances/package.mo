@@ -31,5 +31,4 @@ When the concentration is not determined by reactions, the
 <a name=\"fig1\"></a>
 <img src=\"modelica://BioChem/Resources/Images/Substance.png\" alt=\"Fig1: Substance\">
 </html></html>", revisions = ""));
-
 end Substances;
