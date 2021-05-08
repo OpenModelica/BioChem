@@ -1,7 +1,6 @@
 within BioChem.Icons.Substances;
 
 partial class SignalSubstance "Substance with a concentration not determined by reactions, but by external equations (translated into SBML assignments)"
-  extends BioChem.Interfaces.Substances.InputSubstance;
   annotation(
     Documentation(info = "<html>
 <p>
