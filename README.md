@@ -19,6 +19,9 @@ Download [BioChem v1.1.0 for MSL v4.0.0 (2021-05-02)](../../archive/v1.1.0.zip)
 
 #### Release notes
 
+* [Version v1.1.1 (2021-05-08)](../../archive/v1.1.1.zip)
+  * Removing a bug in the Icons package
+  * Minor improvements 
 * [Version v1.1.0 (2021-05-02)](../../archive/v1.1.0.zip)
   * Moving, simplifying and cleaning embedded graphical annotations to own package Icons 
   * A UsersGuide package 
