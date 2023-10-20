@@ -1,6 +1,6 @@
 within BioChem.Icons;
 
-partial package Interfaces
+package Interfaces
   extends Modelica.Icons.InterfacesPackage;
   extends Modelica.Icons.UnderConstruction;
 
