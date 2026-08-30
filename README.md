@@ -15,10 +15,17 @@ take place in-between these substances in a diverse number of biochemical pathwa
 
 ## Current release
 
-Download [BioChem v1.1.2 for MSL v4.0.0 (2021-06-19)](../../archive/v1.1.2.zip)
+Download [BioChem v1.1.3 for MSL v4.1.0 (2026-08-30)](../../archive/v1.1.3.zip)
 
 #### Release notes
 
+* [Version v1.1.3 (2026-08-30)](../../archive/v1.1.3.zip)
+  * Updated to MSL 4.1.0
+  * The Icons sub-packages are no longer declared `partial`, which made every example fail to instantiate
+  * `Examples.centralMetabolism.extra_cellular` translates again, and its fast-equilibrium pools start from their declared concentrations
+  * `Examples.CaOscillations`: the endoplasmic reticulum is a reservoir (`BoundarySubstance`) rather than an accumulating substance
+  * `Examples.GlucoseInsulinModel`: insulin action and insulin provision are signed deviations from basal
+  * Replaced the non-standard `NumberOfIntervals = -1` and `Algorithm` experiment annotation options with a standard `Interval`
 * [Version v1.1.2 (2021-06-19)](../../archive/v1.1.2.zip)
   * Bug removal: several duplication implementations within package.mo and seperate *.mo source files 
 * [Version v1.1.1 (2021-05-08)](../../archive/v1.1.1.zip)
