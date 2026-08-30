@@ -72,7 +72,7 @@ The simulation results are shown in the
 <img src=\"modelica://BioChem/Resources/Images/Container.png\" alt=\"Fig1: Simulation results\">
 
 </html>", revisions = ""),
-      experiment(StartTime = 0, StopTime = 150, NumberOfIntervals = -1, Algorithm = "dassl", Tolerance = 1e-06));
+      experiment(StartTime = 0, StopTime = 150, Interval = 0.06, Tolerance = 1e-06));
   end Container;
 
   model Nucleus "Nucleus"

@@ -248,7 +248,7 @@ The simulation results are shown in the
 <img src=\"modelica://BioChem/Resources/Images/Cell.png\" alt=\"Fig1: Simulation results\">
 
 </html>", revisions = ""),
-      experiment(StartTime = 0.0, StopTime = 100, NumberOfIntervals = -1, Algorithm = "dassl", Tolerance = 1e-06));
+      experiment(StartTime = 0.0, StopTime = 100, Interval = 0.04, Tolerance = 1e-06));
   end cell;
   annotation(
     __MathCore(RDF = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001/vcard-rdf/3.0#\" xmlns:bqbiol=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\"http://biomodels.net/model-qualifiers/\">

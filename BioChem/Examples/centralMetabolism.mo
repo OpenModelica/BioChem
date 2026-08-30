@@ -363,51 +363,51 @@ package centralMetabolism
     end jck_;
 
     inner Real cytosol_V = V "Variable used to make the compartment volume accessible for inner components. Do not edit.";
-    centralMetabolism.cytosol.NADH_ NADH(c(start = 0.00406177)) "NADH" annotation(
+    NADH_ NADH(c(start = 0.00406177)) "NADH" annotation(
       Placement(transformation(origin = {100.0, -20.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.FDP_ FDP(c(start = 0.0999758)) "Fructose 1,6-diphosphate" annotation(
+    FDP_ FDP(c(start = 0.0999758)) "Fructose 1,6-diphosphate" annotation(
       Placement(transformation(origin = {-19.7747, -40.109}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.PYR_ PYR(c(start = 0.148871)) "Pyruvate" annotation(
+    PYR_ PYR(c(start = 0.148871)) "Pyruvate" annotation(
       Placement(transformation(origin = {100.0, -40.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -180)));
-    centralMetabolism.cytosol.ADP_ ADP(c(start = 0.0695775)) "ADP" annotation(
+    ADP_ ADP(c(start = 0.0695775)) "ADP" annotation(
       Placement(transformation(origin = {-19.7747, -20.109}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.IMP_ IMP(c(start = 0.650608)) "IMP" annotation(
+    IMP_ IMP(c(start = 0.650608)) "IMP" annotation(
       Placement(transformation(origin = {-120.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -270)));
-    centralMetabolism.cytosol.ATP_ ATP(c(start = 12.7913) = atp) "ATP" annotation(
+    ATP_ ATP(c(start = 12.7913) = atp) "ATP" annotation(
       Placement(transformation(origin = {-10.0, 30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -720)));
-    centralMetabolism.cytosol.AMP_ AMP(c(start = 0.000398124)) "AMP" annotation(
+    AMP_ AMP(c(start = 0.000398124)) "AMP" annotation(
       Placement(transformation(origin = {-120.0, 30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -90)));
-    centralMetabolism.cytosol.LAC_ LAC(c(start = 4.34299)) "Lactate" annotation(
+    LAC_ LAC(c(start = 4.34299)) "Lactate" annotation(
       Placement(transformation(origin = {140.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.NAD_ NAD(c(start = 0.695938) = nad) "NAD" annotation(
+    NAD_ NAD(c(start = 0.695938) = nad) "NAD" annotation(
       Placement(transformation(origin = {120.0, -60.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -450)));
-    centralMetabolism.cytosol.CP_ CP(c(start = 28.2621)) "Phosphocreatine" annotation(
+    CP_ CP(c(start = 28.2621)) "Phosphocreatine" annotation(
       Placement(transformation(origin = {-80.0, 10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -90)));
-    centralMetabolism.cytosol.Cr_ Cr(c(start = 25.7379) = cr) "Creatine" annotation(
+    Cr_ Cr(c(start = 25.7379) = cr) "Creatine" annotation(
       Placement(transformation(origin = {-80.0, 50.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -180)));
-    centralMetabolism.cytosol.GLY_ GLY(c(start = 1)) "Glycogen" annotation(
+    GLY_ GLY(c(start = 1)) "Glycogen" annotation(
       Placement(transformation(origin = {-140.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.PN_ PN(c = pn) "Inorganic phosphate" annotation(
+    PN_ PN(c = pn) "Inorganic phosphate" annotation(
       Placement(transformation(origin = {80.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -180)));
-    centralMetabolism.cytosol.G6P_ G6P(c(start = 0.603855 / (1 + kh))) "Glucose 6-phosphate" annotation(
+    G6P_ G6P(c(start = 0.603855 / (1 + kh), fixed = true)) "Glucose 6-phosphate" annotation(
       Placement(transformation(origin = {-100.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.F6P_ F6P(c(start = 0.603855 * kh / (1 + kh))) "Fructose 6-phosphate" annotation(
+    F6P_ F6P(c(start = 0.603855 * kh / (1 + kh))) "Fructose 6-phosphate" annotation(
       Placement(transformation(origin = {-60.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -360)));
-    centralMetabolism.cytosol.jda_ jda(bamp = bamp) "jda" annotation(
+    jda_ jda(bamp = bamp) "jda" annotation(
       Placement(transformation(origin = {-120.0, 10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -90)));
-    centralMetabolism.cytosol.vpfk_ vpfk(badp = badp) "vpfk" annotation(
+    vpfk_ vpfk(badp = badp) "vpfk" annotation(
       Placement(transformation(origin = {-40.0, -30.0}, extent = {{-10.0, 10.0}, {10.0, -10.0}})));
-    centralMetabolism.cytosol.vldh_ vldh "vldh" annotation(
+    vldh_ vldh "vldh" annotation(
       Placement(transformation(origin = {120.0, -30.0}, extent = {{-10.0, 10.0}, {10.0, -10.0}})));
-    centralMetabolism.cytosol.vpdh_ vpdh(badp = badp) "vpdh" annotation(
+    vpdh_ vpdh(badp = badp) "vpdh" annotation(
       Placement(transformation(origin = {120.0, -90.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.jak_ jak(bamp = bamp, badp = badp) "jak" annotation(
+    jak_ jak(bamp = bamp, badp = badp) "jak" annotation(
       Placement(transformation(origin = {10.0, 30.0}, extent = {{10.0, -10.0}, {-10.0, 10.0}}, rotation = 90)));
-    centralMetabolism.cytosol.vgph_ vgph(bamp = bamp, kh = kh) "vgph" annotation(
+    vgph_ vgph(bamp = bamp, kh = kh) "vgph" annotation(
       Placement(transformation(origin = {-120.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.jatpase_ jatpase(badp = badp) "jatpase" annotation(
+    jatpase_ jatpase(badp = badp) "jatpase" annotation(
       Placement(transformation(origin = {-40.0, 10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -90)));
-    centralMetabolism.cytosol.jck_ jck(badp = badp) "jck" annotation(
+    jck_ jck(badp = badp) "jck" annotation(
       Placement(transformation(origin = {-70.0, 30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -90)));
     BioChem.Interfaces.Nodes.SubstanceConnector node_LAC annotation(
       Placement(transformation(origin = {140.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}), iconTransformation(origin = {125.0384, 0.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
@@ -423,13 +423,13 @@ package centralMetabolism
     parameter Real kt;
     BioChem.Reactions.FastEquilibrium.Uuf vH6P(kP1 = kh) "Fast equilibrium reaction for the compound of G6P and F6P" annotation(
       Placement(transformation(origin = {-80.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.vald_ vald(kt = kt) "vald" annotation(
+    vald_ vald(kt = kt) "vald" annotation(
       Placement(transformation(origin = {0.2253, -40.109}, extent = {{-10.0, 10.0}, {10.0, -10.0}})));
-    centralMetabolism.cytosol.DHAP_ DHAP(c.start = 0.07427 / (1 + kt)) annotation(
+    DHAP_ DHAP(c(start = 0.07427 / (1 + kt), fixed = true)) annotation(
       Placement(transformation(origin = {20.0, -40.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.G3P_ G3P(c.start = 0.07427 * kt / (1 + kt)) annotation(
+    G3P_ G3P(c.start = 0.07427 * kt / (1 + kt)) annotation(
       Placement(transformation(origin = {60.0, -40.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.cytosol.vgpdh_ vgpdh_1(badp = badp) annotation(
+    vgpdh_ vgpdh_1(badp = badp) annotation(
       Placement(transformation(origin = {80.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
     BioChem.Reactions.FastEquilibrium.Uuf vT3P(kS1 = 1, kP1 = kt) "Fast equilibrium reaction for the compound of G6P and F6P" annotation(
       Placement(transformation(origin = {40.0, -40.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
@@ -555,9 +555,9 @@ GPh, glycogen phosphorylase (EC 2.4.1.1); Lac, lactate; LDH, lactate dehydrogena
 
     centralMetabolism.cytosol cytosol(bamp = bamp, badp = badp, kh = kh, pn = pn, atp = atp, kt = kt, nad = nad, cr = cr) annotation(
       Placement(transformation(origin = {1.221, -0.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.extra_cellular.vef_ vef "vef" annotation(
+    vef_ vef "vef" annotation(
       Placement(transformation(origin = {40.0, 0.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}, rotation = -360)));
-    centralMetabolism.extra_cellular.LACext_ LACext(c.start = 0) "Lactate" annotation(
+    LACext_ LACext(c.start = 0) "Lactate" annotation(
       Placement(transformation(origin = {70.0, 0.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
     inner Real default_V = V "Variable used to make the compartment volume accessible for inner components. Do not edit.";
     inner Real cytosol_V = cytosol.V "Variable used to make the compartment volume of inner compartments accessible. Do not edit.";
@@ -641,7 +641,7 @@ This model and data analysis are described in (Selivanov VA, de Atauri P, Centel
 <p>If simulated for more than 0.5 minutes the model has numerical problems. In real life a person cannot maintain maximal intensity exercise, then fatigue comes and the intensity decreases. So, steady state at maximal intensity does not exist in real life either.</p>
       ", revisions = ""),
       __MathCore(RDF = ""),
-      experiment(StartTime = 0.0, StopTime = 0.5, Algorithm = "dassl", Tolerance = 1e-05));
+      experiment(StartTime = 0.0, StopTime = 0.5, Interval = 0.0002, Tolerance = 1e-05));
   end extra_cellular;
 
   model mitochondria
@@ -691,17 +691,17 @@ This model and data analysis are described in (Selivanov VA, de Atauri P, Centel
       rr = VmaxN * s1.c / (KmNADH + s1.c);
     end vn_;
 
-    centralMetabolism.mitochondria.NADH_ NADHm(c.start = 0) "NADH" annotation(
+    NADH_ NADHm(c.start = 0) "NADH" annotation(
       Placement(transformation(origin = {-20.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.mitochondria.NAD_ NADm(c.start = 0) "NAD" annotation(
+    NAD_ NADm(c.start = 0) "NAD" annotation(
       Placement(transformation(origin = {20.0, 10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.mitochondria.jox_ jox(badp = badp) "jox" annotation(
+    jox_ jox(badp = badp) "jox" annotation(
       Placement(transformation(origin = {-0.0, 0.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
     BioChem.Interfaces.Nodes.SubstrateConnector node_ADP annotation(
       Placement(transformation(origin = {-20.0, 10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}), iconTransformation(origin = {-125.8208, -47.131}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
     BioChem.Interfaces.Nodes.SubstanceConnector node_NADHm annotation(
       Placement(transformation(origin = {-30.0, -30.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}), iconTransformation(origin = {125.7398, 50.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
-    centralMetabolism.mitochondria.vn_ vn "vn" annotation(
+    vn_ vn "vn" annotation(
       Placement(transformation(origin = {-50.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));
     BioChem.Interfaces.Nodes.SubstrateConnector node_NADH annotation(
       Placement(transformation(origin = {-80.0, -10.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}}), iconTransformation(origin = {126.1247, -50.0}, extent = {{-10.0, -10.0}, {10.0, 10.0}})));

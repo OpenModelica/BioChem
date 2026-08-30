@@ -83,7 +83,7 @@ package CaOscillations "Oxhamre2005_Ca_oscillation"
       </bqbiol:isVersionOf>
     </rdf:Description>
   </rdf:RDF>"),
-      experiment(StartTime = 0.0, StopTime = 120, NumberOfIntervals = -1, Algorithm = "dassl", Tolerance = 1e-06),
+      experiment(StartTime = 0.0, StopTime = 120, Interval = 0.05, Tolerance = 1e-06),
       Documentation(info = "<html>
 <h1>Ca Oscillations</h1>
 This example is a Modelica version of the model presented in <i>A Minimal Generic Model of Bacteria-Induced Intracellular Ca<sup>2+</sup>
@@ -113,7 +113,7 @@ The simulation results are shown in the
     import BioChem.Constants.*;
 
     model CaER_
-      extends BioChem.Substances.Substance;
+      extends BioChem.Substances.BoundarySubstance;
       annotation(
         __MathCore(RDF = "<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:vCard=\"http://www.w3.org/2001/vcard-rdf/3.0#\" xmlns:bqbiol=\"http://biomodels.net/biology-qualifiers/\" xmlns:bqmodel=\"http://biomodels.net/model-qualifiers/\">
     <rdf:Description rdf:about=\"#metaid_0000006\">

@@ -68,7 +68,7 @@ package GlucoseInsulinModel
       Line(origin = {0, 16.83}, points = {{0, 5.83}, {0, -5.83}}, color = {0, 0, 128}, thickness = 1, smooth = Smooth.Bezier));
     annotation(
       Diagram(coordinateSystem(extent = {{-148.5, -105}, {148.5, 105}}, preserveAspectRatio = true, grid = {10, 10}), graphics = {Rectangle(origin = {-39.6875, -1.36711}, fillColor = {255, 0, 0}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-55.2911, -15.5929}, {55.2911, 15.5929}}), Rectangle(origin = {-57.5522, -75}, fillColor = {128, 0, 0}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-40.931, -15}, {40.931, 15}}), Rectangle(origin = {-40.7051, -45.0134}, fillColor = {128, 0, 0}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-24.0839, -16.859}, {24.0839, 16.859}}), Rectangle(origin = {17.3745, 60}, fillColor = {255, 170, 127}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-35, -18.3307}, {35, 18.3307}}), Rectangle(origin = {70, 58.6765}, fillColor = {255, 170, 127}, pattern = LinePattern.None, fillPattern = FillPattern.Solid, extent = {{-20, -38.6765}, {20, 38.6765}}), Line(origin = {100, -55.25}, points = {{-8.26, 0}, {8.26, 0}}, color = {0, 0, 128}, thickness = 1), Text(origin = {126.135, -55.59}, fillPattern = FillPattern.Solid, extent = {{-15.6548, -4.41}, {15.6548, 4.41}}, textString = "Glucose flow", fontName = "Arial"), Line(origin = {100, -66.03}, points = {{-8.26, 0}, {8.26, 0}}, color = {0, 0, 255}, pattern = LinePattern.Dash), Line(origin = {100, -85.28}, points = {{-8.26, 0}, {8.26, 0}}, color = {255, 0, 255}, pattern = LinePattern.Dash), Line(origin = {100, -75.36}, points = {{-8.26, 0}, {8.26, 0}}, color = {128, 0, 128}, thickness = 1), Text(origin = {128.34, -65.59}, fillPattern = FillPattern.Solid, extent = {{-17.8596, -4.41}, {17.8596, 4.41}}, textString = "Glucose signal", fontName = "Arial"), Text(origin = {124.953, -75.59}, fillPattern = FillPattern.Solid, extent = {{-13.3507, -4.41}, {13.3507, 4.41}}, textString = "Insulin flow", fontName = "Arial"), Text(origin = {126.987, -85.59}, fillPattern = FillPattern.Solid, extent = {{-15.3871, -4.41}, {15.3871, 4.41}}, textString = "Insulin signal", fontName = "Arial")}),
-      experiment(StartTime = 0.0, StopTime = 420, NumberOfIntervals = -1, Algorithm = "dassl", Tolerance = 1e-06),
+      experiment(StartTime = 0.0, StopTime = 420, Interval = 0.2, Tolerance = 1e-06),
       Documentation(info = "<html>
 <h1>A Whole Body Model of the Glucose Insulin System</h1>
 
@@ -180,8 +180,8 @@ The simulation results of the whole body level are shown in the  <a href=\"#fig2
         BioChem.Units.Concentration i_po(start = 3.6);
         BioChem.Units.Concentration g;
         BioChem.Units.Concentration g_p;
-        BioChem.Units.Concentration y;
-        BioChem.Units.Concentration y_signal(start = 0);
+        Real y "Provision of new insulin, signed deviation from basal";
+        Real y_signal(start = 0) "Provision of new insulin, signed deviation from basal";
         BioChem.Units.Concentration s_signal;
         parameter Real alpha = 0.05;
         parameter Real beta = 0.11;
@@ -203,7 +203,7 @@ The simulation results of the whole body level are shown in the  <a href=\"#fig2
           Placement(transformation(origin = {2.22045e-16, 60}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
         BioChem.Examples.GlucoseInsulinModel.Utilities.Reactions.signaltosubstance signaltosubstance2 annotation(
           Placement(transformation(origin = {100, 60}, extent = {{-10, -10}, {10, 10}}, rotation = -90)));
-        BioChem.Examples.GlucoseInsulinModel.Utilities.Reactions.signaltosubstance signaltosubstance3 annotation(
+        BioChem.Examples.GlucoseInsulinModel.Utilities.Reactions.signaltosubstance signaltosubstance3(s1(c(min = -Modelica.Constants.inf)), p1(c(min = -Modelica.Constants.inf))) annotation(
           Placement(transformation(origin = {60, -30}, extent = {{-10, -10}, {10, 10}})));
         BioChem.Substances.SignalSubstance I_po_signal(c = i_po) annotation(
           Placement(transformation(origin = {-90, 40}, extent = {{-10, -10}, {10, 10}})));
@@ -211,9 +211,9 @@ The simulation results of the whole body level are shown in the  <a href=\"#fig2
           Placement(transformation(origin = {0, 40}, extent = {{-10, -10}, {10, 10}})));
         BioChem.Substances.Substance G_p(c = g_p) annotation(
           Placement(transformation(origin = {100, 40}, extent = {{-10, -10}, {10, 10}})));
-        BioChem.Substances.Substance Y(c = y) annotation(
+        BioChem.Substances.Substance Y(c(min = -Modelica.Constants.inf) = y, n(min = -Modelica.Constants.inf), n1(c(min = -Modelica.Constants.inf))) annotation(
           Placement(transformation(origin = {80, -30}, extent = {{-10, -10}, {10, 10}})));
-        BioChem.Substances.SignalSubstance Y_signal(c = y_signal) annotation(
+        BioChem.Substances.SignalSubstance Y_signal(c(min = -Modelica.Constants.inf) = y_signal, n(min = -Modelica.Constants.inf), n1(c(min = -Modelica.Constants.inf))) annotation(
           Placement(transformation(origin = {40, -30}, extent = {{-10, -10}, {10, 10}})));
       equation
         connect(Y_signal.n1, signaltosubstance3.s1) annotation(
@@ -705,7 +705,7 @@ The simulation results of the whole body level are shown in the  <a href=\"#fig2
       model UtilizationReaction
         extends BioChem.Interfaces.Reactions.Uui;
         extends BioChem.Interfaces.Reactions.Modifiers.Modifier;
-        BioChem.Units.Concentration X;
+        Real X "Insulin action on glucose utilization, signed deviation from basal";
         Real V_max;
         parameter Real part;
         parameter Real V_m0;
