@@ -407,7 +407,7 @@ package CellDivison "Tyson1991_CellCycle_6var"
       </bqbiol:is>
     </rdf:Description>
   </rdf:RDF>"),
-      experiment(StartTime = 0.0, StopTime = 100, NumberOfIntervals = -1, Algorithm = "dassl", Tolerance = 1e-06),
+      experiment(StartTime = 0.0, StopTime = 100, Interval = 0.04, Tolerance = 1e-06),
       Documentation(info = "<html>
 <h1>CellDivision</h1>
 This example is a Modelica version of the model presented in <i>Modeling the cell division cycle: cdc2 and cyclin interactions</i> by John J. Tyson. (Proc. Nati. Acad. Sci. USA
